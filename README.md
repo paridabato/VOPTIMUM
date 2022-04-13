@@ -1,3 +1,3 @@
 # VOPTIMUM
 
-git clone https://github.com/libgit2/libgit2 autonoveo.loc
+git clone https://github.com/paridabato/VOPTIMUM.git autonoveo.loc

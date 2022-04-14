@@ -104,12 +104,6 @@ picture {
   display: block;
 }
 
-img,
-video {
-  width: 100%;
-  height: auto;
-}
-
 iframe {
   position: absolute;
   top: 0;
@@ -233,122 +227,6 @@ body {
   position: relative;
 }
 
-.banner__slider {
-  width: 100%;
-  height: 100%;
-}
-
-.banner__slider__slide {
-  width: inherit;
-  height: inherit;
-  position: relative;
-}
-
-.banner__slider__slide__bg-img {
-  width: inherit;
-  height: inherit;
-  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(32%, black), color-stop(67%, rgba(255, 255, 255, 0))), url("/assets/img/photo-1565043666747-69f6646db940.avif");
-  background-image: linear-gradient(90deg, black 0%, black 32%, rgba(255, 255, 255, 0) 67%), url("/assets/img/photo-1565043666747-69f6646db940.avif");
-  -webkit-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-          filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.banner__slider__slide__title {
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  font-size: 3rem;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.banner__arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 2rem;
-  position: absolute;
-  top: 60%;
-  left: 20%;
-}
-
-.banner__arrows__left {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.banner__arrows__left svg {
-  fill: #ffffff;
-  margin: auto;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.banner__arrows__left:hover {
-  border-color: #90101f;
-}
-
-.banner__arrows__left:hover svg {
-  fill: red;
-}
-
-.banner__arrows__right {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.banner__arrows__right svg {
-  fill: #ffffff;
-  margin: auto;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.banner__arrows__right:hover {
-  border-color: #90101f;
-}
-
-.banner__arrows__right:hover svg {
-  fill: red;
-}
-
 .banner__brands-slider {
   width: 100%;
   height: 5rem;
@@ -427,5 +305,125 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.banner .banner-swiper {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.banner .banner-swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.banner .banner-swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right;
+     object-position: right;
+  padding: 0 !important;
+  -webkit-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+          filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+.banner .banner-swiper .swiper-wrapper .swiper-slide:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, black 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+.banner .banner-swiper .banner-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 18%;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-left {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-left svg {
+  fill: white;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-left:hover {
+  border-color: #90101f;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-left:hover svg {
+  fill: #90101f;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-right {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-right svg {
+  fill: white;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-right:hover {
+  border-color: #90101f;
+}
+
+.banner .banner-swiper .banner-arrows .banner-arrows-right:hover svg {
+  fill: #90101f;
 }
 /*# sourceMappingURL=style.css.map */

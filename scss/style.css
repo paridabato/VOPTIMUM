@@ -182,7 +182,7 @@ body {
 }
 
 #header .header-menu .logo {
-  background-image: url(assets/img/autonoveoLogo.png);
+  background-image: url(../../assets/img/autonoveoLogo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,8 +247,8 @@ body {
 .banner__slider__slide__bg-img {
   width: inherit;
   height: inherit;
-  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(32%, black), color-stop(67%, rgba(255, 255, 255, 0))), url("assets/img/photo-1565043666747-69f6646db940.avif");
-  background-image: linear-gradient(90deg, black 0%, black 32%, rgba(255, 255, 255, 0) 67%), url("assets/img/photo-1565043666747-69f6646db940.avif");
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(32%, black), color-stop(67%, rgba(255, 255, 255, 0))), url("/assets/img/photo-1565043666747-69f6646db940.avif");
+  background-image: linear-gradient(90deg, black 0%, black 32%, rgba(255, 255, 255, 0) 67%), url("/assets/img/photo-1565043666747-69f6646db940.avif");
   -webkit-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
           filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   background-size: cover;

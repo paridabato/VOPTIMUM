@@ -1,7 +1,18 @@
-@import 'partials/_reset';
-@import 'partials/_base';
-@import 'partials/_variables';
-@import 'partials/_header';
-@import 'partials/_banner';
-@import 'partials/_banner-slider';
-@import 'partials/_autonoveo';
+// ########################################################################
+//                     CORE PARTIALS
+// ########################################################################
+
+@import 'core/_reset';
+@import 'core/_base';
+@import 'core/_variables';
+@import 'core/_mixins';
+
+
+// ########################################################################
+//                     HOME PAGE PARTIALS
+// ########################################################################
+
+@import 'home_page/_header';
+@import 'home_page/_banner';
+@import 'home_page/_banner-slider';
+@import 'home_page/_autonoveo';

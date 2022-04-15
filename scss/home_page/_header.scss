@@ -3,6 +3,7 @@
 // ###############################
 #header {
     width: 100%;
+
     .sub-header {
         width: 100%;
         display: flex;
@@ -12,17 +13,20 @@
         color: $white;
         height: 3rem;
         gap: 0.8rem;
+
         &__item:not(:last-child) {
             border-right: 1px solid $white;
             padding-right: 0.7rem;
         }
     }
+
     .header-menu {
         width: 100%;
         height: 5rem;
         display: flex;
         align-items: center;
         padding: 0 3rem 0 3rem;
+
         .logo {
             background-image: url(../../assets/img/autonoveoLogo.png);
             background-size: contain;
@@ -31,6 +35,7 @@
             width: 10rem;
             height: 100%;
         }
+
         &__items {
             display: flex;
             flex-grow: 1;
@@ -38,10 +43,13 @@
             height: 100%;
             align-items: center;
             justify-content: center;
+
             &__item {
+                @include links;
                 line-height: 100%;
                 color: $black;
                 transition: 300ms ease-out;
+
                 &:hover {
                     color: $red;
                 }
@@ -53,6 +61,7 @@
 @media screen and (max-width: 700px) {
     .sub-header {
         font-size: 0.7rem;
+
         &__item:nth-of-type(2) {
             display: none;
         }

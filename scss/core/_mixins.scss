@@ -28,5 +28,11 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 2px;
-    color: $red;
+}
+
+@mixin h1-core-style {
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 60px;
+    color: $black;
 }

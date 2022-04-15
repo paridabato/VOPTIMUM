@@ -245,6 +245,10 @@ h5 {
 }
 
 #header .header-menu__items__item {
+  font-family: 'Palanquin';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2px;
   line-height: 100%;
   color: #000000;
   -webkit-transition: 300ms ease-out;
@@ -391,8 +395,8 @@ h5 {
 
 .banner .banner-swiper .swiper-wrapper .swiper-slide .slide-title {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 32%;
+  left: 15%;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,9 +405,16 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .banner .banner-swiper .swiper-wrapper .swiper-slide .slide-title span {
+  font-family: 'Montserrat Alternates';
+  font-weight: 600;
+  font-size: 60px;
+  color: #000000;
   color: #ffffff;
   -webkit-filter: unset;
           filter: unset;
@@ -420,7 +431,7 @@ h5 {
           justify-content: center;
   position: absolute;
   top: 70%;
-  left: 18%;
+  left: 15%;
 }
 
 .banner .banner-swiper .banner-arrows .banner-arrows-left {
@@ -485,5 +496,21 @@ h5 {
 
 .banner .banner-swiper .banner-arrows .banner-arrows-right:hover svg {
   fill: #90101f;
+}
+
+@media screen and (max-width) {
+  .banner .banner-swiper .swiper-wrapper .swiper-slide .slider-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) brightness(39%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1);
+            filter: grayscale(100%) brightness(39%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1);
+  }
+}
+
+.why-autonoveo {
+  width: clamp();
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,7 @@ body {
 p {
     font-family: 'Palanquin';
     font-weight: 300;
-    font-size: 18px;
+    font-size: clamp(12px, 1.5vw, 18px);
     line-height: 22px;
 }
 

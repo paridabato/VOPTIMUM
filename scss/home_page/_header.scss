@@ -26,6 +26,7 @@
         display: flex;
         align-items: center;
         padding: 0 3rem 0 3rem;
+        position: relative;
 
         .logo {
             background-image: url(../../assets/img/autonoveoLogo.png);
@@ -45,13 +46,145 @@
             justify-content: center;
 
             &__item {
-                @include links;
+                @extend %links;
                 line-height: 100%;
                 color: $black;
                 transition: 300ms ease-out;
 
                 &:hover {
                     color: $red;
+                }
+            }
+        }
+
+        #burger-area {
+            width: 3rem;
+            height: 3rem;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-100%, -50%);
+
+            #burger {
+                width: 1.5rem;
+                height: 3px;
+                background-color: $black;
+                border-radius: 3px;
+                position: relative;
+                transition: 300ms;
+
+                &:before {
+                    content: '';
+                    width: 1.5rem;
+                    height: 3px;
+                    background-color: $black;
+                    position: absolute;
+                    top: .75rem;
+                    left: 0;
+                    transform: translateY(-50%);
+                    border-radius: 3px;
+                    transition: 300ms;
+
+
+                }
+
+                &:after {
+                    content: '';
+                    width: 1.5rem;
+                    height: 3px;
+                    background-color: $black;
+                    position: absolute;
+                    bottom: .75rem;
+                    left: 0;
+                    transform: translateY(50%);
+                    border-radius: 3px;
+                    transition: 300ms;
+
+                }
+
+            }
+
+            &:hover {
+
+                #burger {
+                    background-color: $red;
+
+                    &:after {
+                        background-color: $red;
+                    }
+
+                    &:before {
+                        background-color: $red;
+                    }
+                }
+            }
+        }
+
+        #cross-area {
+            width: 3rem;
+            height: 3rem;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-100%, -50%);
+
+            #cross {
+                width: 2.1rem;
+                height: 2.1rem;
+                position: relative;
+                transition: 300ms;
+
+                &:before {
+                    content: '';
+                    width: 2.1rem;
+                    height: 3px;
+                    background-color: $black;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%) rotate(-45deg);
+                    border-radius: 3px;
+                    transition: 300ms;
+
+
+                }
+
+                &:after {
+                    content: '';
+                    width: 2.1rem;
+                    height: 3px;
+                    background-color: $black;
+                    position: absolute;
+                    bottom: 50%;
+                    left: 0;
+                    transform: translateY(50%) rotate(45deg);
+                    border-radius: 3px;
+                    transition: 300ms;
+
+                }
+
+            }
+
+            &:hover {
+
+                #cross {
+                    &:after {
+                        background-color: $red;
+                    }
+
+                    &:before {
+                        background-color: $red;
+                    }
                 }
             }
         }
@@ -64,6 +197,57 @@
 
         &__item:nth-of-type(2) {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-menu {
+        display: flex;
+        width: 100%;
+        height: 5rem;
+        align-items: center;
+        padding: 0 3rem 0 3rem;
+        position: relative;
+
+        .logo {
+            background-image: url(../../assets/img/autonoveoLogo.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 10rem;
+            height: 100%;
+        }
+
+        &__items {
+            display: none !important;
+            position: absolute;
+            z-index: 90;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            width: 300px;
+            height: 470px !important;
+            background-color: white !important;
+            gap: 0;
+            padding-left: 4rem;
+            padding-top: 8rem;
+            margin-top: -#{$sub-height};
+
+            &__item {
+                width: 100%;
+                height: 30px;
+                color: $black;
+                transition: 300ms ease-out;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+
+        #cross-area {
+            z-index: 99;
         }
     }
 }

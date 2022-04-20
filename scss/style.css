@@ -130,7 +130,7 @@ iframe {
 }
 
 html {
-  width: 100%;
+  width: 100vw;
 }
 
 body {
@@ -229,7 +229,8 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 3rem 0 3rem;
+  padding-right: clamp(0.8rem, 1.5rem, 3rem);
+  padding-left: clamp(0.8rem, 1.5rem, 3rem);
   position: relative;
 }
 
@@ -489,7 +490,7 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: clamp(400px, 80%, 1140px);
   height: 100%;
   background: transparent;
   overflow: hidden;
@@ -619,7 +620,10 @@ h5 {
 }
 
 .banner .banner-swiper .swiper-wrapper .swiper-slide .slide-title span {
-  color: #ffffff;
+  font-family: 'Montserrat Alternates';
+  font-weight: 600;
+  font-size: clamp(20px, 8vw, 60px);
+  color: #000000;
   -webkit-filter: unset;
           filter: unset;
 }
@@ -636,7 +640,7 @@ h5 {
   position: absolute;
   top: 70%;
   left: 0;
-  margin-left: clamp(200px, 20vw, 350px);
+  margin-left: clamp(0.8em, calc(-1.5em + 8vw), 40em);
 }
 
 .banner .banner-swiper .banner-arrows .banner-arrows-left {

@@ -1,16 +1,23 @@
 .why-autonoveo {
     width: 100%;
+    margin-top: 2rem;
 
     .nb-boxes {
+        max-width: 1160px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
         &__left {
             display: flex;
+            gap: 5rem;
             background-color: red;
+            margin: 1rem 0 1rem 0;
 
             .counter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 span {
                     color: $medium-grey;
@@ -18,11 +25,53 @@
                     font-weight: 600;
                 }
             }
+
+            .counter-text {
+
+                :first-child {
+                    border-right: 2px solid $black;
+                    font-weight: 800;
+                    padding-right: .7rem;
+                    line-height: 1rem;
+                }
+
+                :last-child {
+                    padding-left: .7rem;
+                }
+            }
         }
 
         &__right {
             display: flex;
+            gap: 5rem;
             background-color: green;
+            margin: 1rem 0 1rem 0;
+
+            .counter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    color: $medium-grey;
+                    font-size: clamp(35px, 3vw, 60px);
+                    font-weight: 600;
+                }
+            }
+
+            .counter-text {
+
+                :first-child {
+                    border-right: 2px solid $black;
+                    font-weight: 800;
+                    padding-right: .7rem;
+                    line-height: 1rem;
+                }
+
+                :last-child {
+                    padding-left: .7rem;
+                }
+            }
         }
     }
 }

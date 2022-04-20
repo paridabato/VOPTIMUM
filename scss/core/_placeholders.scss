@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-@mixin big-content {
+%big-content {
     font-family: 'Palanquin';
     font-weight: 300;
     font-size: 22px;
@@ -7,7 +6,7 @@
     color: $medium-grey;
 }
 
-@mixin content {
+%content {
     font-family: 'Palanquin';
     font-weight: 300;
     font-size: 18px;
@@ -15,7 +14,7 @@
     color: $black;
 }
 
-@mixin important-content {
+%important-content {
     font-family: 'Palanquin';
     font-weight: 600;
     font-size: 18px;
@@ -24,21 +23,22 @@
     color: $black;
 }
 
-@mixin links {
+%links {
     font-family: 'Palanquin';
     font-weight: 500;
     font-size: 18px;
     line-height: 2px;
 }
 
-@mixin h1-core-style {
+%h1-core-style {
     font-family: 'Montserrat Alternates';
     font-weight: 600;
-    font-size: clamp(20px, 8vw, 60px);
+    font-size: clamp(35px, 3vw, 60px) !important;
     color: $black;
-    // @media screen and (max-width: 700px) {
-    //     font-size: 20px;
-    // }
 }
-=======
->>>>>>> 07e5a23617b15eeef20efd54fe68e3a6127c9674
+
+%red-hover {
+    &:hover {
+        background-color: $red;
+    }
+}

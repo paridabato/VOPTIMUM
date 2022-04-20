@@ -229,13 +229,9 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   padding-right: clamp(0.8rem, 1.5rem, 3rem);
   padding-left: clamp(0.8rem, 1.5rem, 3rem);
-=======
-  padding: 0 3rem 0 3rem;
   position: relative;
->>>>>>> 07e5a23617b15eeef20efd54fe68e3a6127c9674
 }
 
 #header .header-menu .logo {
@@ -624,14 +620,10 @@ h5 {
 }
 
 .banner .banner-swiper .swiper-wrapper .swiper-slide .slide-title span {
-<<<<<<< HEAD
   font-family: 'Montserrat Alternates';
   font-weight: 600;
   font-size: clamp(20px, 8vw, 60px);
   color: #000000;
-=======
->>>>>>> 07e5a23617b15eeef20efd54fe68e3a6127c9674
-  color: #ffffff;
   -webkit-filter: unset;
           filter: unset;
 }
@@ -648,11 +640,7 @@ h5 {
   position: absolute;
   top: 70%;
   left: 0;
-<<<<<<< HEAD
   margin-left: clamp(0.8em, calc(-1.5em + 8vw), 40em);
-=======
-  margin-left: clamp(200px, 20vw, 350px);
->>>>>>> 07e5a23617b15eeef20efd54fe68e3a6127c9674
 }
 
 .banner .banner-swiper .banner-arrows .banner-arrows-left {

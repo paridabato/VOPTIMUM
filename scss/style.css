@@ -475,7 +475,6 @@ h5 {
 
 .banner {
   width: 100%;
-  height: 700px;
   position: relative;
 }
 
@@ -717,6 +716,37 @@ h5 {
 }
 
 .why-autonoveo {
-  width: clamp(100%, 80%, 60%);
+  width: 100%;
+}
+
+.why-autonoveo .nb-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.why-autonoveo .nb-boxes__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+}
+
+.why-autonoveo .nb-boxes__left .counter span {
+  color: #9b9b9b;
+  font-size: clamp(35px, 3vw, 60px);
+  font-weight: 600;
+}
+
+.why-autonoveo .nb-boxes__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */

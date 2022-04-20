@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+@mixin big-content {
+    font-family: 'Palanquin';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    color: $medium-grey;
+}
+
+@mixin content {
+    font-family: 'Palanquin';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+}
+
+@mixin important-content {
+    font-family: 'Palanquin';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.5;
+    color: $black;
+}
+
+@mixin links {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2px;
+}
+
+@mixin h1-core-style {
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: clamp(20px, 8vw, 60px);
+    color: $black;
+    // @media screen and (max-width: 700px) {
+    //     font-size: 20px;
+    // }
+}
+=======
+>>>>>>> 07e5a23617b15eeef20efd54fe68e3a6127c9674

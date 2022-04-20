@@ -1,0 +1,44 @@
+%big-content {
+    font-family: 'Palanquin';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    color: $medium-grey;
+}
+
+%content {
+    font-family: 'Palanquin';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+}
+
+%important-content {
+    font-family: 'Palanquin';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.5;
+    color: $black;
+}
+
+%links {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2px;
+}
+
+%h1-core-style {
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: clamp(35px, 3vw, 60px) !important;
+    color: $black;
+}
+
+%red-hover {
+    &:hover {
+        background-color: $red;
+    }
+}

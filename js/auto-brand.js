@@ -14,6 +14,23 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".brands-slider-arrow-left",
         prevEl: ".brands-slider-arrow-right",
     },
+    breakpoints: {
+        // when window width is >= 480px
+        400: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        800: {
+            slidesPerView: 5,
+            spaceBetween: 40
+        },
+        // when window width is >= 640px
+        1160: {
+            slidesPerView: 8,
+            spaceBetween: 40
+        }
+    }
 });
 
 var appendNumber = 4;

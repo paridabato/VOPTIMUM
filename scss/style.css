@@ -140,7 +140,7 @@ body {
 p {
   font-family: 'Palanquin';
   font-weight: 300;
-  font-size: clamp(12px, 1.5vw, 18px);
+  font-size: clamp(14px, 1.5vw, 18px);
   line-height: 22px;
 }
 
@@ -154,7 +154,7 @@ h1 {
 h2 {
   font-family: 'Montserrat Alternates';
   font-weight: 300;
-  font-size: 60px;
+  font-size: clamp(35px, 3vw, 60px);
   color: #000000;
 }
 
@@ -864,6 +864,52 @@ h5 {
   padding-left: .7rem;
 }
 
+.why-autonoveo .title-block {
+  width: 40%;
+  margin: 3rem auto;
+}
+
+.why-autonoveo .title-block__lld {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.why-autonoveo .title-block__why {
+  text-align: center;
+}
+
+.why-autonoveo .title-block__why span {
+  font-weight: 600;
+}
+
+.why-autonoveo .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1160px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+.why-autonoveo .cards__card {
+  width: calc(1160px/4);
+  padding: 1rem 2rem;
+}
+
+.why-autonoveo .cards__card__number {
+  width: auto;
+  margin-bottom: 1.5rem;
+  color: #90101f;
+  font-weight: 600;
+}
+
+.why-autonoveo .cards__card__title {
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 650px) {
   .nb-boxes {
     width: 80% !important;
@@ -873,6 +919,98 @@ h5 {
   }
   .nb-boxes__left {
     gap: 2rem !important;
+  }
+  .title-block {
+    width: 80% !important;
+  }
+  .cards__card {
+    width: 380px !important;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 0.5fr 1fr;
+      grid-template-rows: 1fr 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "title-block title-block autos" "desc-block desc-block autos" "driver lld-entreprises autos";
+}
+
+.container .grid-title-block {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title-block;
+  background-color: yellow;
+  padding: 1rem;
+}
+
+.container .grid-title-block__service {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.container .grid-title-block__title span {
+  font-weight: 600;
+}
+
+.container .autos {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: autos;
+  background-size: cover;
+}
+
+.container .desc-block {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: desc-block;
+  background-color: green;
+}
+
+.container .desc-block__desc {
+  padding: 1rem;
+}
+
+.container .driver {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: driver;
+  background-size: cover;
+}
+
+.container .lld-entreprises {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: lld-entreprises;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container .lld-entreprises__top__title {
+  color: #ffffff !important;
+}
+
+.container .lld-entreprises__bot__title {
+  color: #ffffff !important;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: 1600px !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1.5fr 2fr 3fr 5fr;
+        grid-template-rows: 1fr 1.5fr 2fr 3fr 5fr;
+        grid-template-areas: "title-block" "desc-block" "driver" "lld-entreprises" "autos";
   }
 }
 /*# sourceMappingURL=style.css.map */

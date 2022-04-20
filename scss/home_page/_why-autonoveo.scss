@@ -87,6 +87,40 @@
             }
         }
     }
+    .title-block {
+        width: 40%;
+        margin: 3rem auto;
+        &__lld {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &__why {
+            text-align: center;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1160px;
+        flex-wrap: wrap;
+        margin: auto;
+        &__card {
+            width: calc(1160px/4);
+            padding: 1rem 2rem;
+            &__number {
+                width: auto;
+                margin-bottom: 1.5rem;
+                color: $red;
+                font-weight: 600;
+            }
+            &__title {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -97,6 +131,14 @@
         }
         &__left {
             gap: 2rem !important;
+        }
+    }
+    .title-block {
+        width: 80% !important;
+    }
+    .cards {
+        &__card {
+            width: 380px !important;
         }
     }
 }

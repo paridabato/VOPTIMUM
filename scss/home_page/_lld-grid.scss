@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "title-block title-block autos" "desc-block desc-block autos" "driver lld-entreprises autos";
+    .grid-title-block {
+        grid-area: title-block;
+        background-color: yellow;
+        padding: 1rem;
+        &__service {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        &__title {
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+    .autos {
+        grid-area: autos;
+        background-size: cover;
+    }
+    .desc-block {
+        grid-area: desc-block;
+        background-color: green;
+        &__desc {
+            padding: 1rem;
+        }
+    }
+    .driver {
+        grid-area: driver;
+        background-size: cover;
+    }
+    .lld-entreprises {
+        grid-area: lld-entreprises;
+        background-color: $black;
+        color: $white;
+        &__top {
+            &__title {
+                color: $white !important;
+            }
+        }
+        &__bot {
+            &__title {
+                color: $white !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        height: 1600px !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr 2fr 3fr 5fr;
+        grid-template-areas: "title-block" "desc-block" "driver" "lld-entreprises" "autos";
+    }
+}

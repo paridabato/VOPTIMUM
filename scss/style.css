@@ -231,7 +231,6 @@ h5 {
           align-items: center;
   padding-right: clamp(0.8rem, 1.5rem, 3rem);
   padding-left: clamp(0.8rem, 1.5rem, 3rem);
-  position: relative;
 }
 
 #header .header-menu .logo {
@@ -620,10 +619,7 @@ h5 {
 }
 
 .banner .banner-swiper .swiper-wrapper .swiper-slide .slide-title span {
-  font-family: 'Montserrat Alternates';
-  font-weight: 600;
-  font-size: clamp(20px, 8vw, 60px);
-  color: #000000;
+  color: #ffffff;
   -webkit-filter: unset;
           filter: unset;
 }
@@ -640,7 +636,7 @@ h5 {
   position: absolute;
   top: 70%;
   left: 0;
-  margin-left: clamp(0.8em, calc(-1.5em + 8vw), 40em);
+  margin-left: clamp(200px, 20vw, 350px);
 }
 
 .banner .banner-swiper .banner-arrows .banner-arrows-left {

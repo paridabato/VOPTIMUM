@@ -100,9 +100,18 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1140px) {
     .banner-swiper {
-        height: 500px !important;
+        height: 490px !important;
+    }
+    .banner-arrows {
+        top: 60% !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner-swiper {
+        height: 300px !important;
     }
     .slide-title {
         margin-left: 1rem !important;

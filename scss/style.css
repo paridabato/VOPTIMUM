@@ -190,7 +190,7 @@ h5 {
 .banner .banner-swiper .swiper-wrapper .swiper-slide .slide-title span {
   font-family: 'Montserrat Alternates';
   font-weight: 600;
-  font-size: clamp(35px, 3vw, 60px) !important;
+  font-size: clamp(25px, 2.7vw, 60px) !important;
   color: #000000;
 }
 
@@ -703,9 +703,18 @@ h5 {
   fill: #90101f;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1140px) {
   .banner-swiper {
-    height: 500px !important;
+    height: 490px !important;
+  }
+  .banner-arrows {
+    top: 60% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner-swiper {
+    height: 300px !important;
   }
   .slide-title {
     margin-left: 1rem !important;

@@ -3,13 +3,13 @@
     height: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "title-block title-block autos" "desc-block desc-block autos" "driver lld-entreprises autos";
+    margin-top: 3rem;
     .grid-title-block {
         grid-area: title-block;
-        background-color: yellow;
         max-width: 500px;
         margin: auto;
         &__service {
@@ -28,7 +28,6 @@
     }
     .desc-block {
         grid-area: desc-block;
-        background-color: green;
         width: 50%;
         margin-left: auto;
         padding-left: 4rem;
@@ -42,7 +41,7 @@
         &__discover {
             width: fit-content;
             margin-left: 1rem;
-            @extend %links;
+            @include links-underline($black);
         }
     }
     .driver {
@@ -52,17 +51,31 @@
     }
     .lld-entreprises {
         grid-area: lld-entreprises;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         background-color: $black;
         color: $white;
+        padding: 2rem 3rem 2rem 4rem;
         &__top {
             &__title {
                 color: $white !important;
+                @extend %content;
+                font-weight: 600;
+                margin-bottom: 1rem;
             }
         }
         &__bot {
             &__title {
                 color: $white !important;
+                @extend %content;
+                font-weight: 600;
+                margin-bottom: 1rem;
             }
+        }
+        &__link {
+            width: fit-content;
+            @include links-underline($white);
         }
     }
 }
@@ -80,13 +93,17 @@
         }
         .desc-block {
             width: 100% !important;
-            padding-left: 1rem !important;
+            padding: 1rem 3rem 1rem 1rem !important;
             &__desc {
                 padding: 0 !important;
+                margin-bottom: 1rem;
             }
             &__discover {
                 margin-left: 0 !important;
             }
+        }
+        .lld-entreprises {
+            padding: 1rem 3rem 1rem 1rem;
         }
     }
 }

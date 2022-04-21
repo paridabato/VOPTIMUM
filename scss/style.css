@@ -245,7 +245,7 @@ h5 {
 }
 
 #header .header-menu .logo {
-  background-image: url(../../assets/img/autonoveoLogo.png);
+  background-image: url(../assets/img/autonoveoLogo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -444,7 +444,7 @@ h5 {
     position: relative;
   }
   .header-menu .logo {
-    background-image: url(../../assets/img/autonoveoLogo.png);
+    background-image: url(../assets/img/autonoveoLogo.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

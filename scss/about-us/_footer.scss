@@ -89,6 +89,18 @@ footer{
         border-left: 0px;
     }
 }
+
+@media screen and(max-width: 1390px){
+    .box-element-left{
+        padding-top: 0px;
+    }
+    .footer-line{
+        border-left: 0px;
+        padding-left: 0px;
+    }
+}
+
+
 @media screen and(max-width: 1300px){
     #footer-box-container{
         display: none;

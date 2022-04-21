@@ -1,0 +1,16 @@
+@mixin links-underline($underline-color) {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    position: relative;
+    &:before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: $underline-color;
+        position: absolute;
+        bottom: -1rem;
+        margin-top: 1rem;
+    }
+}

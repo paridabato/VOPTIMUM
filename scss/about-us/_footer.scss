@@ -1,0 +1,129 @@
+// #############################
+// FOOTER
+// #############################
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    max-width: 100%;
+}
+#footer-box-container{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+#footer-left-box{
+    display: flex;
+    width:45%;
+    height: 45px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+#footer-right-box{
+    display: flex;
+    width: 45%;
+    height: 45px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+#footer-left-box p{
+    color: white;
+    font-size: 12px;
+}
+#footer-contact-link{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footer-line{
+    border-left: 1px solid white;
+    padding-left: 70px;
+}
+.box-element-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8px;
+    
+}
+.box-element-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-copyright-link{
+    margin-top: 25px;
+    width: 38%;
+    display: flex;
+}
+#footer-copyright-link a{
+    text-decoration: none;
+    color: #9b9b9b;
+}
+
+#auto-in-bold-white{
+    color: white;
+    font-weight: bold;
+}
+
+.footer-link-line{
+    border-left: 1px solid white;
+    padding-left: 15px ;
+}
+
+.link-box{
+    display: flex;
+}
+.link-box a {
+    padding-right: 15px;
+}
+
+@media screen and(max-width: 1700px){
+    .footer-link-line{
+        border-left: 0px;
+    }
+}
+@media screen and(max-width: 1300px){
+    #footer-box-container{
+        display: none;
+    }
+    #footer-copyright-link{
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+        height: 80%;
+        justify-content: space-around;
+    }
+    .line-in-mobile{
+        border-left: 1px solid white;
+        
+    }
+}
+
+@media (min-width: 820px) and(max-width: 1082px){
+    #footer-copyright-link{
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) and(max-width: 819px){
+    #footer-copyright-link{
+        width: 80%;
+    }
+}
+
+@media screen and(max-width: 599px){
+    #footer-copyright-link{
+        width: 98%;
+    }
+    .link-box{
+        font-size: 12px;
+    }
+}
+

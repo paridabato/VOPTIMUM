@@ -16,7 +16,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         // when window width is >= 480px
-        400: {
+        100: {
             slidesPerView: 3,
             spaceBetween: 30
         },

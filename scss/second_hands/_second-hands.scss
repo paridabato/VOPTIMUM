@@ -1,19 +1,20 @@
 .second-hands {
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     &__bg-container {
         width: 100%;
         height: 500px;
         background-size: cover;
-        background-position: 50% 0;
+        background-position: center;
         background-repeat: no-repeat;
     }
     &__offer {
         display: flex;
         align-items: center;
         justify-content: center;
+        background: transparent;
         width: 100%;
         height: fit-content;
         margin-top: -5rem;
@@ -81,24 +82,30 @@
             }
         }
         &__right {
-            width: 20%;
-            height: 40%;
+            width: 23%;
+            height: 300px;
             background-size: cover;
         }
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
     .second-hands {
+        &__bg-container {
+            height: 400px;
+        }
         &__offer {
             display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 350px;
+            flex-direction: column !important;
+            width: 100% !important;
+            height: fit-content;
             &__left {
-                .sub-title {}
+                width: 90%;
             }
-            &__right {}
+            &__right {
+                width: 100%;
+                height: 300px;
+            }
         }
     }
 }

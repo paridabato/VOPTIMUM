@@ -119,14 +119,23 @@
 // }
 
 @media screen and(max-width: 900px){
+        #third-article{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
     #third-article-box-contact{
-        min-width: 550px !important;
+        width: 100% !important;
+        background-size: cover;
     }
     #third-article-box-right-step-content-one-two{
         width: 100%;
     }
     #third-article-box-right-step-content-three-four{
         width: 100%;
+    }
+    #third-article-box-contact-text-content p{
+        font-size: 27px;
     }
 }
 

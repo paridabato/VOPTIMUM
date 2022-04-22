@@ -5,6 +5,7 @@
 body{
     height: 100vh;
     overflow-x: hidden;
+    width: 1920px;
 }
 #main-about-us{
     width: 1920px;
@@ -88,44 +89,70 @@ body{
     }
 }
 
-@media screen and(max-width: 1750px)
-{
-    
-}
-
 @media screen and(max-width: 900px){
-    #box-in-articles-lld-two{
+    #first-article{
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
-    body{
+    #box-in-articles-lld-two{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #box-in-articles-lld-two-img{
+        min-width: 880px !important;
+    }
+    #content-article-text{
+        width: 900px;
+    }
+    .box-in-articles-lld{
         width: 100%;
     }
-    #main-about-us{
+    .box-in-articles-lld h2{
+        font-size: 75px;
+    }
+    .box-in-articles-lld p{
+        font-size: 20px;
+    }
+    // body{
+    //     width: 100%;
+    // }
+    // #main-about-us{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     width: 1920px;
+    // }
+    
+    // #first-article{
+    //     justify-content: center;
+    //     align-items: center;
+    //     max-width: 700px;
+    // }
+    #first-article-img{
+        width: 100% !important;
+        height: 690px !important;
+        background-size: cover !important;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    // #content-article-text{
+    //     margin-top: 50px;
+    //     height: 450px;
+    // }
+    // .box-in-articles-lld{
+    //     margin-left: 8% !important;
+
+    // }
+
+    #box-articles-lld{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 1920px;
-    }
-    
-    #first-article{
-        justify-content: center;
-        align-items: center;
-        max-width: 700px;
-    }
-    #first-article-img{
-        width: 550px !important;
-        height: 690px !important;
-    }
-    
-    #content-article-text{
-        margin-top: 50px;
-        height: 450px;
-    }
-    .box-in-articles-lld{
-        margin-left: 8% !important;
-
     }
 }
 

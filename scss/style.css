@@ -135,6 +135,8 @@ html {
 
 body {
   width: 100%;
+  overscroll-behavior-x: none;
+  overflow-x: hidden;
 }
 
 p {
@@ -180,7 +182,7 @@ h5 {
   color: #000000;
 }
 
-.container .lld-entreprises__top__title, .container .lld-entreprises__bot__title {
+.lld .container .lld-entreprises__top__title, .lld .container .lld-entreprises__bot__title {
   font-family: 'Palanquin';
   font-weight: 300;
   font-size: 18px;
@@ -242,7 +244,7 @@ h5 {
 }
 
 #header .header-menu .logo {
-  background-image: url(../assets/img/autonoveoLogo.png);
+  background-image: url(../../assets/img/autonoveoLogo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -441,7 +443,7 @@ h5 {
     position: relative;
   }
   .header-menu .logo {
-    background-image: url(../assets/img/autonoveoLogo.png);
+    background-image: url(../../assets/img/autonoveoLogo.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -734,6 +736,9 @@ h5 {
 
 .why-autonoveo {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 2rem;
 }
 
@@ -765,6 +770,9 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .why-autonoveo .nb-boxes__left__box .counter {
@@ -788,6 +796,7 @@ h5 {
 
 .why-autonoveo .nb-boxes__left__box .counter-text {
   text-align: center;
+  font-size: 18px;
 }
 
 .why-autonoveo .nb-boxes__left__box .counter-text :first-child {
@@ -828,6 +837,9 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .why-autonoveo .nb-boxes__right__box .counter {
@@ -851,6 +863,7 @@ h5 {
 
 .why-autonoveo .nb-boxes__right__box .counter-text {
   text-align: center;
+  font-size: 18px;
 }
 
 .why-autonoveo .nb-boxes__right__box .counter-text :first-child {
@@ -890,7 +903,7 @@ h5 {
   font-weight: 600;
 }
 
-.why-autonoveo .cards {
+.why-autonoveo .why-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,20 +915,26 @@ h5 {
   margin: auto;
 }
 
-.why-autonoveo .cards__card {
+.why-autonoveo .why-cards__why-card {
   width: calc(1160px/4);
   padding: 1rem 2rem;
 }
 
-.why-autonoveo .cards__card__number {
+.why-autonoveo .why-cards__why-card__number {
   width: auto;
   margin-bottom: 1.5rem;
   color: #90101f;
   font-weight: 600;
 }
 
-.why-autonoveo .cards__card__title {
+.why-autonoveo .why-cards__why-card__title {
+  width: auto;
+  text-align: justify;
   margin-bottom: 1.5rem;
+}
+
+.why-autonoveo .why-cards__why-card__desc {
+  text-align: justify;
 }
 
 @media screen and (max-width: 650px) {
@@ -931,14 +950,21 @@ h5 {
   .title-block {
     width: 80% !important;
   }
-  .cards__card {
+  .why-cards__why-card {
     width: 380px !important;
+    height: 300px !important;
   }
 }
 
-.container {
+.lld {
   width: 100%;
   height: 800px;
+  margin-bottom: 2rem;
+}
+
+.lld .container {
+  width: 100%;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -951,7 +977,7 @@ h5 {
   margin-top: 3rem;
 }
 
-.container .grid-title-block {
+.lld .container .grid-title-block {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -960,16 +986,16 @@ h5 {
   margin: auto;
 }
 
-.container .grid-title-block__service {
+.lld .container .grid-title-block__service {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
-.container .grid-title-block__title span {
+.lld .container .grid-title-block__title span {
   font-weight: 600;
 }
 
-.container .autos {
+.lld .container .autos {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 3;
@@ -977,7 +1003,7 @@ h5 {
   background-size: cover;
 }
 
-.container .desc-block {
+.lld .container .desc-block {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -998,11 +1024,11 @@ h5 {
           justify-content: center;
 }
 
-.container .desc-block__desc {
+.lld .container .desc-block__desc {
   padding: 1rem;
 }
 
-.container .desc-block__discover {
+.lld .container .desc-block__discover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1014,7 +1040,7 @@ h5 {
   position: relative;
 }
 
-.container .desc-block__discover:before {
+.lld .container .desc-block__discover:before {
   content: '';
   width: 100%;
   height: 3px;
@@ -1024,7 +1050,7 @@ h5 {
   margin-top: 1rem;
 }
 
-.container .driver {
+.lld .container .driver {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: driver;
@@ -1032,7 +1058,7 @@ h5 {
   background-position: center;
 }
 
-.container .lld-entreprises {
+.lld .container .lld-entreprises {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: lld-entreprises;
@@ -1050,19 +1076,19 @@ h5 {
   padding: 2rem 3rem 2rem 4rem;
 }
 
-.container .lld-entreprises__top__title {
+.lld .container .lld-entreprises__top__title {
   color: #ffffff !important;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.container .lld-entreprises__bot__title {
+.lld .container .lld-entreprises__bot__title {
   color: #ffffff !important;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.container .lld-entreprises__link {
+.lld .container .lld-entreprises__link {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1073,7 +1099,7 @@ h5 {
   position: relative;
 }
 
-.container .lld-entreprises__link:before {
+.lld .container .lld-entreprises__link:before {
   content: '';
   width: 100%;
   height: 3px;
@@ -1084,31 +1110,33 @@ h5 {
 }
 
 @media screen and (max-width: 800px) {
-  .container {
+  .lld {
     height: 1600px !important;
+  }
+  .lld .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1.5fr 2fr 3fr 5fr;
         grid-template-rows: 1fr 1.5fr 2fr 3fr 5fr;
         grid-template-areas: "title-block" "desc-block" "driver" "lld-entreprises" "autos";
   }
-  .container .grid-title-block {
+  .lld .container .grid-title-block {
     width: 100% !important;
     margin: 0 !important;
     padding-left: 1rem;
   }
-  .container .desc-block {
+  .lld .container .desc-block {
     width: 100% !important;
     padding: 1rem 3rem 1rem 1rem !important;
   }
-  .container .desc-block__desc {
+  .lld .container .desc-block__desc {
     padding: 0 !important;
     margin-bottom: 1rem;
   }
-  .container .desc-block__discover {
+  .lld .container .desc-block__discover {
     margin-left: 0 !important;
   }
-  .container .lld-entreprises {
+  .lld .container .lld-entreprises {
     padding: 1rem 3rem 1rem 1rem;
   }
 }
@@ -1341,6 +1369,40 @@ h5 {
   }
 }
 
+.showroom {
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.showroom__blur {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.588673) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.showroom__blur .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: clamp(25px, 1.5vw, 40px);
+  text-align: center;
+  margin: 0 2rem 0 2rem;
+}
+
 #banner div {
   text-align: center;
 }
@@ -1422,9 +1484,8 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2135,6 +2196,16 @@ footer {
 @media screen and (max-width: 1700px) {
   .footer-link-line {
     border-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .box-element-left {
+    padding-top: 0px;
+  }
+  .footer-line {
+    border-left: 0px;
+    padding-left: 0px;
   }
 }
 

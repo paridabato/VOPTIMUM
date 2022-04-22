@@ -1,5 +1,6 @@
 .why-autonoveo {
     width: 100%;
+    height: fit-content;
     margin-top: 2rem;
     .nb-boxes {
         width: 60%;
@@ -14,6 +15,7 @@
             &__box {
                 display: flex;
                 flex-direction: column;
+                flex: 1;
                 .counter {
                     display: flex;
                     justify-content: center;
@@ -27,6 +29,7 @@
                 }
                 .counter-text {
                     text-align: center;
+                    font-size: 18px;
                      :first-child {
                         font-weight: 800;
                         padding-right: .7rem;
@@ -54,6 +57,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                flex: 1;
                 .counter {
                     display: flex;
                     justify-content: center;
@@ -67,6 +71,7 @@
                 }
                 .counter-text {
                     text-align: center;
+                    font-size: 18px;
                      :first-child {
                         font-weight: 800;
                         padding-right: .7rem;
@@ -101,13 +106,13 @@
             }
         }
     }
-    .cards {
+    .why-cards {
         display: flex;
         justify-content: space-around;
         max-width: 1160px;
         flex-wrap: wrap;
         margin: auto;
-        &__card {
+        &__why-card {
             width: calc(1160px/4);
             padding: 1rem 2rem;
             &__number {
@@ -117,7 +122,12 @@
                 font-weight: 600;
             }
             &__title {
+                width: auto;
+                text-align: justify;
                 margin-bottom: 1.5rem;
+            }
+            &__desc {
+                text-align: justify;
             }
         }
     }
@@ -136,9 +146,10 @@
     .title-block {
         width: 80% !important;
     }
-    .cards {
-        &__card {
+    .why-cards {
+        &__why-card {
             width: 380px !important;
+            height: 300px !important;
         }
     }
 }

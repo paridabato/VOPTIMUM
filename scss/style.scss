@@ -6,6 +6,9 @@
 @import 'core/_variables';
 @import 'core/_mixins';
 @import 'core/_placeholders';
+@import 'core/_brand-swiper';
+@import 'core/_main-page-title';
+@import 'core/_how-it-works';
 // ########################################################################
 //                     HOME PAGE PARTIALS
 // ########################################################################
@@ -14,15 +17,19 @@
 @import 'home_page/_banner-slider';
 @import 'home_page/_why-autonoveo';
 @import 'home_page/_lld-grid';
-@import 'home_page/_how-it-works';
 @import 'home_page/_contact-offer';
 @import 'home_page/_showroom';
 // ########################################################################
 //                     SECOND HANDS PAGE PARTIALS
 // ########################################################################
-@import 'second_hands/_main-page-title';
 @import 'second_hands/_second-hands';
 @import 'second_hands/_second-hands-grid';
+// ########################################################################
+//                     LLD PAGE PARTIALS
+// ########################################################################
+@import 'lld/_lld-first-section';
+@import 'lld/_lld-how-works';
+@import 'lld/_optimisation-grid';
 //##########################################################################
 //                      ABOUT US PAGE
 // #########################################################################

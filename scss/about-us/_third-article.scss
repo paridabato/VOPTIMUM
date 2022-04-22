@@ -53,7 +53,7 @@
 
 #third-article-box-right{
     padding: 35px;
-    width: 100%;
+    min-width: 1265px;
 }
 #third-article-box-right-title-content{
     text-align: center;
@@ -95,28 +95,28 @@
 
 // RESPONSIVE DESIGN
 
-@media screen and(max-width: 1500px){
-    #third-article{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0px;
-    }
-    #third-article-box-right-step-content{
-        flex-direction: column;
-        align-items: center;
-    }
-    #third-article-box-contact-content{
-        width: 100%;
-    }
-    .four-step-chose-autonoveo{
-        height: auto;
-    }
-}
-@media screen and(max-width: 1400px){
-    #third-article-box-contact{
-        min-width: 650px !important;
-    }
-}
+// @media screen and(max-width: 1500px){
+//     #third-article{
+//         flex-direction: column;
+//         align-items: center;
+//         margin-top: 0px;
+//     }
+//     #third-article-box-right-step-content{
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     #third-article-box-contact-content{
+//         width: 100%;
+//     }
+//     .four-step-chose-autonoveo{
+//         height: auto;
+//     }
+// }
+// @media screen and(max-width: 1400px){
+//     #third-article-box-contact{
+//         min-width: 650px !important;
+//     }
+// }
 
 @media screen and(max-width: 900px){
     #third-article-box-contact{

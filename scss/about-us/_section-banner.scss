@@ -2,7 +2,16 @@
 // Banner
 // ##########################
 
+// #banner{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
 
+#title-box{
+    width: 1920px;
+}
 #banner div{
     text-align: center;
 }

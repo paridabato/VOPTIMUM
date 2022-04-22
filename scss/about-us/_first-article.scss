@@ -6,6 +6,9 @@ body{
     height: 100vh;
     overflow-x: hidden;
 }
+#main-about-us{
+    width: 1920px;
+}
 #first-article{
     display: flex;
     width: 100%;
@@ -38,8 +41,9 @@ body{
 #content-article-text{
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 490px;
+    align-items: space-between;
+    width: 490px;
+    max-height: 400px;
 
 }
 #content-article-text h4{
@@ -52,36 +56,41 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-#box-articles-lld{
-    width: 64%;
-}
+// #box-articles-lld{
+//     width: 64%;
+// }
 
 // RESPONSIVE DESIGN
 
 @media screen and(max-width: 1715px){
-    #first-article{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #box-articles-lld{
-        width: 100%;
-    }
+    // #first-article{
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+    // #box-articles-lld{
+    //     width: 100%;
+    // }
 
-    .box-in-articles-lld{
-       text-align: center;
-       width: 100%;
-       margin-bottom: 70px;
-    }
-    .box-in-articles-lld h2{
-        width: 100%;
-    }
-    .box-in-articles-lld div{
-        margin-left: 0px;
-    }
+    // .box-in-articles-lld{
+    //    text-align: center;
+    //    width: 100%;
+    //    margin-bottom: 70px;
+    // }
+    // .box-in-articles-lld h2{
+    //     width: 100%;
+    // }
+    // .box-in-articles-lld div{
+    //     margin-left: 0px;
+    // }
     #box-in-articles-lld-two{
         justify-content: center;
     }
+}
+
+@media screen and(max-width: 1750px)
+{
+    
 }
 
 @media screen and(max-width: 900px){
@@ -93,11 +102,11 @@ body{
     body{
         width: 100%;
     }
-    main{
+    #main-about-us{
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 100%;
+        width: 1920px;
     }
     
     #first-article{

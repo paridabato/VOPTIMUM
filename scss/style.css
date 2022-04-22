@@ -1403,6 +1403,199 @@ h5 {
   margin: 0 2rem 0 2rem;
 }
 
+.main-second-title {
+  width: 100%;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-second-title__sub {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.main-second-title__title {
+  text-align: center;
+}
+
+.second-hands {
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.second-hands__bg-container {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.second-hands__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: -5rem;
+}
+
+.second-hands__offer__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  width: 45%;
+  height: 600px;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.second-hands__offer__left .sub-title {
+  text-transform: uppercase;
+}
+
+.second-hands__offer__left .descs {
+  margin-bottom: 2rem;
+}
+
+.second-hands__offer__left .descs *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.second-hands__offer__left .descs__desc span {
+  font-weight: 600;
+}
+
+.second-hands__offer__left .descs__contact-us {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Palanquin';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  position: relative;
+}
+
+.second-hands__offer__left .descs__contact-us:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -1rem;
+  margin-top: 1rem;
+}
+
+.second-hands__offer__left .counter__box {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.second-hands__offer__left .counter__box .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-hands__offer__left .counter__box .counter span {
+  color: #9b9b9b;
+  font-size: clamp(35px, 3vw, 60px);
+  font-weight: 600;
+  line-height: inherit;
+}
+
+.second-hands__offer__left .counter__box .counter-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.second-hands__offer__left .counter__box .counter-text :first-child {
+  font-weight: 800;
+  padding-right: .7rem;
+  position: relative;
+}
+
+.second-hands__offer__left .counter__box .counter-text :first-child::before {
+  content: '';
+  background-color: #000000;
+  width: 2px;
+  height: 1.2rem;
+  position: absolute;
+  right: 0;
+}
+
+.second-hands__offer__left .counter__box .counter-text :last-child {
+  padding-left: .7rem;
+}
+
+.second-hands__offer__right {
+  width: 20%;
+  height: 40%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 650px) {
+  .second-hands__offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 350px;
+  }
+}
+
 #banner div {
   text-align: center;
 }

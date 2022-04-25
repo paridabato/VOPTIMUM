@@ -968,6 +968,8 @@ h5 {
   height: 1.2rem;
   position: absolute;
   right: 0;
+  -webkit-transform: translateY(18%);
+          transform: translateY(18%);
 }
 
 .why-autonoveo .nb-boxes__right__box .counter-text :last-child {

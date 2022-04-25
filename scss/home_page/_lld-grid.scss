@@ -40,11 +40,10 @@
             flex-direction: column;
             justify-content: center;
             &__desc {
-                padding: 1rem;
+                padding: 1rem 1rem 1rem 0;
             }
             &__discover {
                 width: fit-content;
-                margin-left: 1rem;
                 @include links-underline($black);
             }
         }

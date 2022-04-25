@@ -31,3 +31,12 @@
 //     max-width: 1920px;;
 //     background-size: cover;
 // }
+
+@media screen and(max-width: 600px){
+    #banner-img{
+        max-width: 100%;
+    }
+    #title-box{
+        width: 100%;
+    }
+}

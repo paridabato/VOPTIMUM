@@ -12,7 +12,7 @@
 #description-big-box{
     background-color: white;
     height: 510px;
-    width: 900px;
+    max-width: 900px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -71,9 +71,9 @@
     }
 }
 
-@media screen and(max-width: 900px){
+@media screen and(min-width: 601px) and(max-width: 900px){
     #container-description{
-        flex-direction: column;
+        // flex-direction: column;
         margin-bottom: 70px;
         width: 1920px;
         align-items: center;
@@ -115,11 +115,23 @@
 
 @media screen and(max-width: 600px){
     #container-description{
+        flex-direction: column;
         margin-top:72px;
+        width: 100%;
+        align-items: center;
     }
     #description-big-box h2{
         font-size: 45px;
         margin-left: 40px;
+    }
+    #description-big-box{
+        width: 85%;
+        align-items: center;
+        height: 750px;
+    }
+    #description-stats-box{
+        margin-bottom: 50px;
+        width: 100%;
     }
     #description-big-box-text{
         font-size: 14px;

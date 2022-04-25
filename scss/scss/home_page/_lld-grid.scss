@@ -1,0 +1,115 @@
+.lld {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 2rem;
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "title-block title-block autos" "desc-block desc-block autos" "driver lld-entreprises autos";
+        margin-top: 3rem;
+        .grid-title-block {
+            grid-area: title-block;
+            max-width: 500px;
+            margin: auto;
+            &__service {
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+            &__title {
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .autos {
+            grid-area: autos;
+            background-size: cover;
+        }
+        .desc-block {
+            grid-area: desc-block;
+            width: 50%;
+            margin-left: auto;
+            padding-left: 4rem;
+            padding-right: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__desc {
+                padding: 1rem 1rem 1rem 0;
+            }
+            &__discover {
+                width: fit-content;
+                @include links-underline($black);
+            }
+        }
+        .driver {
+            grid-area: driver;
+            background-size: cover;
+            background-position: center;
+        }
+        .lld-entreprises {
+            grid-area: lld-entreprises;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: $black;
+            color: $white;
+            padding: 2rem 3rem 2rem 4rem;
+            &__top {
+                &__title {
+                    color: $white !important;
+                    @extend %content;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+            }
+            &__bot {
+                &__title {
+                    color: $white !important;
+                    @extend %content;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+            }
+            &__link {
+                width: fit-content;
+                @include links-underline($white);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .lld {
+        height: 1600px !important;
+        .container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1.5fr 2fr 3fr 5fr;
+            grid-template-areas: "title-block" "desc-block" "driver" "lld-entreprises" "autos";
+            .grid-title-block {
+                width: 100% !important;
+                margin: 0 !important;
+                padding-left: 1rem;
+            }
+            .desc-block {
+                width: 100% !important;
+                padding: 1rem 3rem 1rem 1rem !important;
+                &__desc {
+                    padding: 0 !important;
+                    margin-bottom: 1rem;
+                }
+                &__discover {
+                    margin-left: 0 !important;
+                }
+            }
+            .lld-entreprises {
+                padding: 1rem 3rem 1rem 1rem;
+            }
+        }
+    }
+}

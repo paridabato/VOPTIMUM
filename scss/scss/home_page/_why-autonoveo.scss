@@ -1,0 +1,155 @@
+.why-autonoveo {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    .nb-boxes {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__left {
+            display: flex;
+            gap: 5rem;
+            margin: 1rem 0 1rem 0;
+            &__box {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                .counter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        color: $medium-grey;
+                        font-size: clamp(35px, 3vw, 60px);
+                        font-weight: 600;
+                        line-height: inherit;
+                    }
+                }
+                .counter-text {
+                    text-align: center;
+                    font-size: 18px;
+                     :first-child {
+                        font-weight: 800;
+                        padding-right: .7rem;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            background-color: $black;
+                            width: 2px;
+                            height: 1.2rem;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                     :last-child {
+                        padding-left: .7rem;
+                    }
+                }
+            }
+        }
+        &__right {
+            display: flex;
+            gap: 5rem;
+            margin: 1rem 0 1rem 0;
+            &__box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1;
+                .counter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        color: $medium-grey;
+                        font-size: clamp(35px, 3vw, 60px);
+                        font-weight: 600;
+                        line-height: inherit;
+                    }
+                }
+                .counter-text {
+                    text-align: center;
+                    font-size: 18px;
+                     :first-child {
+                        font-weight: 800;
+                        padding-right: .7rem;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            background-color: $black;
+                            width: 2px;
+                            height: 1.2rem;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                     :last-child {
+                        padding-left: .7rem;
+                    }
+                }
+            }
+        }
+    }
+    .title-block {
+        width: 40%;
+        margin: 3rem auto;
+        &__lld {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &__why {
+            text-align: center;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+    .why-cards {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1160px;
+        flex-wrap: wrap;
+        margin: auto;
+        &__why-card {
+            width: calc(1160px/4);
+            padding: 1rem 2rem;
+            &__number {
+                width: auto;
+                margin-bottom: 1.5rem;
+                color: $red;
+                font-weight: 600;
+            }
+            &__title {
+                width: auto;
+                text-align: justify;
+                margin-bottom: 1.5rem;
+            }
+            &__desc {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nb-boxes {
+        width: 80% !important;
+        &__right {
+            gap: 2rem !important;
+        }
+        &__left {
+            gap: 2rem !important;
+        }
+    }
+    .title-block {
+        width: 80% !important;
+    }
+    .why-cards {
+        &__why-card {
+            width: 380px !important;
+            height: 300px !important;
+        }
+    }
+}

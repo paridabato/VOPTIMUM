@@ -5,7 +5,6 @@
 
 #second-article{
     display: flex;
-    width: 100%;
 }
 #content-articles-text-two{
     display: flex;
@@ -60,37 +59,37 @@
 
 // responsive design 
 
-// @media screen and(max-width: 1400px){
-//     #second-article{
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     #second-article-img{
-//         margin-top: 30px;
-//         max-height: 392px;
-//     }
-//     #box-in-second-articles-lld{
-//         text-align: center;
-//         width: 100%;
-//      }
-//     #box-in-second-articles-lld h2{
-//          width: 100%;
-//     }
-//     #box-in-second-articles-lld div{
-//          margin-left: 0px;
-//     }
+@media screen and(max-width: 1400px){
+    #second-article{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #second-article-img{
+        margin-top: 30px;
+        max-height: 392px;
+    }
+    #box-in-second-articles-lld{
+        text-align: center;
+        width: 100%;
+     }
+    #box-in-second-articles-lld h2{
+         width: 100%;
+    }
+    #box-in-second-articles-lld div{
+         margin-left: 0px;
+    }
 
-//     #content-articles-text-two div{
-//         width: 650px;
-//     }
-// }
+    #content-articles-text-two div{
+        width: 650px;
+    }
+}
 
 @media screen and(max-width: 900px){
     #second-article-img{
         margin-top: 30px;
-        width: 650px !important;
-        height: 392px !important;
+        width: 550px !important;
+        height: 332px !important;
     }
     #box-in-second-articles-lld{
         text-align: left;
@@ -107,55 +106,32 @@
         margin-left: 100px;
         max-width: 90%;
     }
-    // #content-articles-text-two{
-    //     width: 75%;
-    // }
+    #content-articles-text-two{
+        width: 75%;
+    }
 }
 
 
 
 @media screen and(max-width: 600px){
-    #second-article{
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-    }
     #box-in-second-articles-lld h2{
         font-size: 42px;
     }
-
+    #box-in-second-articles-lld{
+        padding-left: 11%;
+    }
     #content-articles-text-two{
         padding-left: 20px;
         justify-content: flex-start;
-        width: 90%;
     }
     #content-articles-text-two div{
         width: 90%;
     }
     #second-article-img{
         width: 100% !important;
+        height: 299px !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
-    #second-article-img{
-        margin-top: 30px;
-        max-height: 330px;
-    }
-    #box-in-second-articles-lld{
-        width: 100%;
-        align-items: flex-start;
-        padding-left: 8%;
-     }
-    #box-in-second-articles-lld h2{
-         width: 100%;
-    }
-    #box-in-second-articles-lld div{
-         margin-left: 0px;
-    }
-    #content-articles-text-two div{
-        width: 650px;
-    }
 }
-
 

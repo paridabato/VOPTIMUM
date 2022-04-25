@@ -115,13 +115,16 @@
         align-items: center;
     }
     #description-big-box h2{
-        font-size: 45px;
-        margin-left: 40px;
+        font-size: 40px;
+        margin-left: 0px;
     }
     #description-big-box{
         width: 85%;
         align-items: center;
         height: 750px;
+    }
+    #description-big-box p{
+        margin-left: 0px;
     }
     #description-stats-box{
         margin-bottom: 50px;

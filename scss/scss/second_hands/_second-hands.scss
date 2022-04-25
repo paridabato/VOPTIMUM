@@ -1,0 +1,112 @@
+.second-hands {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    &__bg-container {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__offer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        width: 100%;
+        height: fit-content;
+        margin-top: -5rem;
+        margin-bottom: 3rem;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $white;
+            width: 45%;
+            height: 600px;
+            padding: 3rem 3rem 2rem 3rem;
+            .sub-title {
+                text-transform: uppercase;
+            }
+            .descs {
+                margin-bottom: 2rem;
+                *:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+                &__desc {
+                    span {
+                        font-weight: 600;
+                    }
+                }
+                &__contact-us {
+                    width: fit-content;
+                    @include links-underline($black);
+                }
+            }
+            .counter__box {
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                .counter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        color: $medium-grey;
+                        font-size: clamp(35px, 3vw, 60px);
+                        font-weight: 600;
+                        line-height: inherit;
+                    }
+                }
+                .counter-text {
+                    text-align: center;
+                    font-size: 18px;
+                     :first-child {
+                        font-weight: 800;
+                        padding-right: .7rem;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            background-color: $black;
+                            width: 2px;
+                            height: 1.2rem;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                     :last-child {
+                        padding-left: .7rem;
+                    }
+                }
+            }
+        }
+        &__right {
+            width: 23%;
+            height: 300px;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .second-hands {
+        &__bg-container {
+            height: 400px;
+        }
+        &__offer {
+            display: flex;
+            flex-direction: column !important;
+            width: 100% !important;
+            height: fit-content;
+            &__left {
+                width: 90%;
+            }
+            &__right {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}

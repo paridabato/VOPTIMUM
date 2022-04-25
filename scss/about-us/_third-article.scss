@@ -142,6 +142,12 @@
     }
 }
 
+@media screen and(max-width: 900px){
+    #third-article{
+        flex-direction: column;
+    }
+}
+
 // @media screen and(max-width: 800px){
 //     #third-article-box-contact{
 //         min-width: 650px;

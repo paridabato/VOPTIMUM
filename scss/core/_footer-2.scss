@@ -4,6 +4,7 @@
     padding: 1.5rem 4rem 1.5rem 4rem;
     background-color: $black;
     flex-wrap: wrap;
+
     .footer-top {
         width: 100%;
         height: fit-content;
@@ -13,6 +14,7 @@
         flex-wrap: wrap;
         gap: .6rem;
         margin-bottom: 1.5rem;
+
         &__left {
             display: flex;
             justify-content: space-between;
@@ -21,6 +23,7 @@
             min-width: 490px;
             height: 3.2rem;
             color: $white;
+
             &__logo-autonoveo {
                 height: 100%;
                 width: 37%;
@@ -30,6 +33,7 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 position: relative;
+
                 span {
                     width: 60%;
                     height: 50%;
@@ -37,10 +41,12 @@
                     background-repeat: no-repeat;
                     background-position: left center;
                 }
+
                 &__under-logo {
                     text-transform: uppercase;
                     font-size: $footer-font-size;
                 }
+
                 &::after {
                     content: '';
                     height: 100%;
@@ -51,26 +57,32 @@
                     right: 0;
                 }
             }
+
             &__adress {
                 text-transform: uppercase;
+
                 &__line-1 {
                     font-size: $footer-font-size;
                 }
+
                 &__line-2 {
                     font-size: $footer-font-size;
                 }
             }
+
             &__contact-us {
                 &__link {
                     font-size: $footer-font-size;
                     text-transform: uppercase;
                     font-family: 'palanquin';
                 }
+
                 &__phone {
                     font-size: $footer-font-size;
                 }
             }
         }
+
         &__right {
             display: flex;
             align-items: center;
@@ -79,6 +91,7 @@
             min-width: 550px;
             height: 3.2rem;
             color: $white;
+
             &__logo-voptimum {
                 height: 100%;
                 width: 30%;
@@ -87,6 +100,7 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: left center;
+
                 &::after {
                     content: '';
                     height: 100%;
@@ -97,6 +111,7 @@
                     right: 0;
                 }
             }
+
             &__logo-autonoveo {
                 background-size: contain;
                 background-position: center;
@@ -105,6 +120,7 @@
                 min-width: 6rem;
                 height: 50%;
             }
+
             &__logo-avis {
                 background-size: contain;
                 background-position: center;
@@ -113,6 +129,7 @@
                 min-width: 6rem;
                 height: 50%;
             }
+
             &__logo-speedy {
                 background-size: contain;
                 background-position: center;
@@ -123,6 +140,7 @@
             }
         }
     }
+
     .footer-bottom {
         max-width: 50%;
         margin: auto;
@@ -134,88 +152,98 @@
         color: $medium-grey;
         position: relative;
         flex-wrap: wrap;
-        &__left {
-            width: 40%;
-            min-width: 240px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+        &__logo-autonoveo {
+            min-width: 150px;
             position: relative;
-            &__logo-autonoveo {
-                min-width: 90px;
-                position: relative;
-                flex: 1;
-                span {
-                    font-weight: 600;
-                }
-                &::before {
-                    content: '©';
-                    color: $medium-grey;
-                    width: .8rem;
-                    aspect-ratio: 1;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: translate(-150%, 8%);
-                }
-                &::after {
-                    content: '';
-                    width: 2px;
-                    height: 100%;
-                    background-color: $medium-grey;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
+            flex: 1;
+            font-size: $footer-font-size;
+            text-align: center;
+
+            span {
+                font-weight: 600;
             }
-            &__ment-leg {
-                min-width: 110px;
-                text-align: end;
-                position: relative;
-                font-family: 'Palanquin';
-                text-transform: capitalize;
-                flex: 1.2;
+
+            &::after {
+                content: '';
+                width: 2px;
+                height: 1rem;
+                background-color: $medium-grey;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY((-50%));
             }
         }
-        &__right {
-            width: 40%;
-            min-width: 360px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            &__pol-conf {
-                min-width: 120px;
-                position: relative;
-                font-family: 'Palanquin';
-                text-transform: capitalize;
-                flex: 1;
-                &::after {
-                    content: '';
-                    width: 2px;
-                    height: 100%;
-                    background-color: $medium-grey;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-            }
-            &__eanet {
-                min-width: 120px;
-                flex: 1;
-                text-align: end;
-                span {
-                    text-transform: uppercase;
-                }
+
+        &__ment-leg {
+            min-width: 150px;
+            text-align: end;
+            position: relative;
+            font-family: 'Palanquin';
+            text-transform: capitalize;
+            flex: 1.2;
+            text-align: center;
+            font-size: $footer-font-size;
+
+            &::after {
+                content: '';
+                width: 2px;
+                height: 1rem;
+                background-color: $medium-grey;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY((-50%));
             }
         }
-        &::after {
-            content: '';
-            width: 2px;
-            height: 100%;
-            background-color: $medium-grey;
-            position: absolute;
-            top: 0;
-            left: 50%;
+
+        &__pol-conf {
+            min-width: 220px;
+            position: relative;
+            font-family: 'Palanquin';
+            text-transform: capitalize;
+            flex: 1;
+            text-align: center;
+            font-size: $footer-font-size;
+
+            &::after {
+                content: '';
+                width: 2px;
+                height: 1rem;
+                background-color: $medium-grey;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY((-50%));
+            }
+        }
+
+        &__eanet {
+            min-width: 150px;
+            flex: 1;
+            text-align: center;
+            font-size: $footer-font-size;
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    #footer {
+        .footer-bottom {
+            max-width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #footer {
+        .footer-bottom {
+            max-width: 95%;
         }
     }
 }
@@ -225,6 +253,18 @@
         .footer-top {
             justify-content: center;
             gap: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 675px) {
+    #footer {
+        .footer-bottom {
+            &__ment-leg::after {
+
+                display: none;
+            }
         }
     }
 }

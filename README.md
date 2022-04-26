@@ -8,3 +8,6 @@ git remote add origin https://github.com/paridabato/VOPTIMUM.git
 
 git pull
 
+https://voptimum.eanet.club/html/home.html
+https://voptimum.eanet.club/html/about-us.html
+https://voptimum.eanet.club/html/second-hands.html

@@ -2240,7 +2240,7 @@ h5 {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-      grid-template-areas: "optimisation__container__speedometer optimisation__container__title-core optimisation__container__title-core" "optimisation__container__speedometer optimisation__container__good-choice optimisation__container__3-lines" "optimisation__container__needs-priority optimisation__container__needs-priority optimisation__container__guy";
+      grid-template-areas: "optimisation__container__speedometer optimisation__container__title-core optimisation__container__title-core" "optimisation__container__speedometer optimisation__container__good-choice optimisation__container__3-lines" "optimisation__container__needs-priority optimisation__container__needs-priority optimisation__container__guy";
 }
 
 .optimisation__container__speedometer {
@@ -2409,7 +2409,7 @@ h5 {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "optimisation__container__speedometer" "optimisation__container__title-core" "optimisation__container__good-choice" "optimisation__container__3-lines" "optimisation__container__needs-priority" "optimisation__container__guy";
+        grid-template-areas: "optimisation__container__speedometer" "optimisation__container__title-core" "optimisation__container__good-choice" "optimisation__container__3-lines" "optimisation__container__needs-priority" "optimisation__container__guy";
   }
   .optimisation__container__title-core {
     width: 100% !important;

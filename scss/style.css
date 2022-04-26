@@ -497,14 +497,13 @@ h5 {
 }
 
 #footer .footer-bottom {
-  max-width: 50%;
   margin: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,11 +518,8 @@ h5 {
 }
 
 #footer .footer-bottom__logo-autonoveo {
-  min-width: 150px;
+  width: 150px;
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-size: 12px;
   text-align: center;
 }
@@ -545,14 +541,11 @@ h5 {
 }
 
 #footer .footer-bottom__ment-leg {
-  min-width: 150px;
+  width: 150px;
   text-align: end;
   position: relative;
   font-family: 'Palanquin';
   text-transform: capitalize;
-  -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
   text-align: center;
   font-size: 12px;
 }
@@ -570,13 +563,10 @@ h5 {
 }
 
 #footer .footer-bottom__pol-conf {
-  min-width: 220px;
+  width: 200px;
   position: relative;
   font-family: 'Palanquin';
   text-transform: capitalize;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: center;
   font-size: 12px;
 }
@@ -594,28 +584,13 @@ h5 {
 }
 
 #footer .footer-bottom__eanet {
-  min-width: 150px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 130px;
   text-align: center;
   font-size: 12px;
 }
 
 #footer .footer-bottom__eanet span {
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 1330px) {
-  #footer .footer-bottom {
-    max-width: 70%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #footer .footer-bottom {
-    max-width: 95%;
-  }
 }
 
 @media screen and (max-width: 1177px) {
@@ -628,6 +603,14 @@ h5 {
 }
 
 @media screen and (max-width: 675px) {
+  #footer {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  #footer .footer-bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #footer .footer-bottom__ment-leg::after {
     display: none;
   }

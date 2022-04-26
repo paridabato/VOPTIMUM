@@ -1,0 +1,100 @@
+.contact {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    &__bg-container {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        width: 100%;
+        height: fit-content;
+        margin-top: -5rem;
+        margin-bottom: 3rem;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $white;
+            width: 45%;
+            height: 400px;
+            padding: 3rem 3rem 2rem 3rem;
+            .sub-title {
+                text-transform: uppercase;
+            }
+            &__cordonates {
+                margin-bottom: 2rem;
+                &__p {
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                &__title {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-weight: 600;
+                    }
+                     :last-child {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &__right {
+            width: 23%;
+            height: fit-content;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            &__phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    color: $medium-grey;
+                    font-size: clamp(35px, 3vw, 60px);
+                    font-weight: 600;
+                    line-height: inherit;
+                }
+            }
+            &__mail {
+                text-align: center;
+                font-size: 18px;
+                span {
+                    font-weight: 800;
+                    padding-right: .7rem;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .second-hands {
+        &__bg-container {
+            height: 400px;
+        }
+        &__offer {
+            display: flex;
+            flex-direction: column !important;
+            width: 100% !important;
+            height: fit-content;
+            &__left {
+                width: 90%;
+            }
+            &__right {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.contact-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "contact-form__company . contact-form__message" "contact-form__last-name contact-form__phone contact-form__message" "contact-form__first-name contact-form__mail contact-form__message" "contact-form__rgpd contact-form__rgpd contact-form__rgpd" "contact-form__submit-btn contact-form__submit-btn contact-form__submit-btn";
+    *:not(:nth-child(n+7)) {
+        background-color: red;
+        input {
+            width: 380px;
+            border-bottom: 1px solid $black;
+            padding: 1rem 0 1rem 0;
+            height: 100%;
+            position: relative;
+            &::placeholder {
+                height: 100%;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $black;
+                position: absolute;
+                top: 1rem;
+                left: 0;
+            }
+        }
+    }
+    &__company {
+        grid-area: contact-form__company;
+    }
+    &__last-name {
+        grid-area: contact-form__last-name;
+    }
+    &__first-name {
+        grid-area: contact-form__first-name;
+    }
+    &__phone {
+        grid-area: contact-form__phone;
+    }
+    &__mail {
+        grid-area: contact-form__mail;
+    }
+    &__message {
+        grid-area: contact-form__message;
+        input {
+            height: 100%;
+        }
+    }
+    &__rgpd {
+        grid-area: contact-form__rgpd;
+    }
+    &__submit-btn {
+        grid-area: contact-form__submit-btn;
+    }
+}

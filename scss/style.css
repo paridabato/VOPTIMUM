@@ -3242,7 +3242,7 @@ h5 {
   height: fit-content;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding-top: 10%;
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3327,20 +3327,8 @@ h5 {
     margin-bottom: 2rem;
     padding-top: 0;
     position: absolute;
-    top: 36%;
+    top: 19rem;
     margin-left: 3rem;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1190px) {
-  .contact__container__right {
-    padding-top: 20%;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .contact__container__right {
-    top: 28%;
   }
 }
 
@@ -3368,16 +3356,16 @@ h5 {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 22px 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 22px 1fr 1fr;
   gap: 2rem 1rem;
   grid-auto-flow: row;
-      grid-template-areas: "contact-form__company . contact-form__message" "contact-form__last-name contact-form__phone contact-form__message" "contact-form__first-name contact-form__mail contact-form__message" "contact-form__rgpd contact-form__rgpd contact-form__rgpd" "contact-form__submit-btn contact-form__submit-btn contact-form__submit-btn";
+      grid-template-areas: "contact-form__company . contact-form__message" "contact-form__last-name contact-form__phone contact-form__message" "contact-form__first-name contact-form__mail contact-form__message" "contact-form__mandatory contact-form__mandatory contact-form__mandatory" "contact-form__rgpd contact-form__rgpd contact-form__rgpd" "contact-form__submit-btn contact-form__submit-btn contact-form__submit-btn";
 }
 
 .contact-form *:not(:nth-child(n+7)) input {
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #9b9b9b;
   padding: 1rem 0 1rem 0;
   height: 100%;
   position: relative;
@@ -3464,25 +3452,59 @@ h5 {
   height: 100%;
 }
 
-.contact-form__rgpd {
+.contact-form__mandatory {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
+  grid-area: contact-form__mandatory;
+}
+
+.contact-form__rgpd {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: contact-form__rgpd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+}
+
+.contact-form__rgpd input[type="checkbox"] {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.contact-form__rgpd .rgpd-text {
+  position: absolute;
+  top: -.3rem;
+  left: 0;
+  text-indent: 1.5rem;
+  z-index: 50;
+}
+
+.contact-form__rgpd .rgpd-text a {
+  display: inline-block;
+  text-indent: 0;
+  font-weight: 600;
 }
 
 .contact-form__submit-btn {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: contact-form__submit-btn;
   margin: auto;
+}
+
+.contact-form__submit-btn input {
+  background-color: black;
+  color: #ffffff;
+  font-weight: 600;
+  padding: .8rem 3rem;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 900px) {
@@ -3496,10 +3518,16 @@ h5 {
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 22px 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 22px 1fr 1fr;
     gap: 1rem;
-        grid-template-areas: "contact-form__company" "contact-form__last-name" "contact-form__first-name" "contact-form__phone" "contact-form__mail" "contact-form__message" "contact-form__message" "contact-form__message" "contact-form__rgpd" "contact-form__submit-btn";
+        grid-template-areas: "contact-form__company" "contact-form__last-name" "contact-form__first-name" "contact-form__phone" "contact-form__mail" "contact-form__message" "contact-form__message" "contact-form__message" "contact-form__mandatory" "contact-form__rgpd" "contact-form__submit-btn";
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .contact-form__submit-btn input {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

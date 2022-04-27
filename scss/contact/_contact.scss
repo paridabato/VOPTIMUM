@@ -51,7 +51,7 @@
             width: fit-content;
             height: fit-content;
             align-self: flex-start;
-            padding-top: 10%;
+            padding-top: 200px;
             display: flex;
             flex-direction: column;
             &__phone {
@@ -116,28 +116,8 @@
                 margin-bottom: 2rem;
                 padding-top: 0;
                 position: absolute;
-                top: 36%;
+                top: 19rem;
                 margin-left: 3rem;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1190px) {
-    .contact {
-        &__container {
-            &__right {
-                padding-top: 20%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 830px) {
-    .contact {
-        &__container {
-            &__right {
-                top: 28%;
             }
         }
     }

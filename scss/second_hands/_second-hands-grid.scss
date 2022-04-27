@@ -1,5 +1,8 @@
 .second-hands-grid {
+    width: 100%;
+    height: fit-content;
     &__container {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 420px 420px;
@@ -53,11 +56,12 @@
     height: 25%;
     background-color: $white-opacity;
     text-transform: uppercase;
+    text-align: end;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: clamp(14px, 1.5vw, 18px);
-    padding-left: 8rem;
+    padding-right: 4rem;
      :first-child {
         font-weight: 800;
         padding-right: .7rem;
@@ -74,6 +78,22 @@
     }
      :last-child {
         padding-left: .7rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+    .second-hands-grid {
+        &__container {
+            &__desc {
+                padding: 4rem 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1390px) {
+    .strong-light {
+        padding-right: 1rem !important;
     }
 }
 

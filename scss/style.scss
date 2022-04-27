@@ -6,14 +6,15 @@
 @import 'core/_variables';
 @import 'core/_mixins';
 @import 'core/_placeholders';
-@import 'core/_brand-swiper';
+@import 'core/_header';
+@import 'core/_brand-slider';
+@import 'core/_swiper';
 @import 'core/_main-page-title';
 @import 'core/_how-it-works';
 @import 'core/_footer';
 // ########################################################################
 //                     HOME PAGE PARTIALS
 // ########################################################################
-@import 'home_page/_header';
 @import 'home_page/_banner';
 @import 'home_page/_banner-slider';
 @import 'home_page/_why-autonoveo';

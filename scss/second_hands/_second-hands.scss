@@ -102,10 +102,31 @@
             height: fit-content;
             &__left {
                 width: 90%;
+                margin-left: auto;
+                margin-right: auto;
             }
             &__right {
                 width: 100%;
                 height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .second-hands {
+        &__offer {
+            &__left {
+                padding: 1.5rem 0 2rem 0;
+                .sub-title {
+                    text-align: center;
+                }
+                .title {
+                    text-align: center;
+                }
+            }
+            &__right {
+                margin-top: 1rem;
             }
         }
     }

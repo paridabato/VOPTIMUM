@@ -16,13 +16,14 @@
 }
 
 html {
-    width: 100vw;
+    width: 100%;
 }
 
 body {
     width: 100%;
-    overscroll-behavior-x: none;
-    overflow-x: hidden;
+    // overscroll-behavior-x: none;
+    // overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 p {

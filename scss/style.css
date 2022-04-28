@@ -3533,4 +3533,70 @@ h5 {
     margin-top: 1rem;
   }
 }
+
+.legal-container {
+  width: 60%;
+  margin: 3rem auto 6rem auto;
+}
+
+.legal-container__main-desc * {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.legal-container__intel-property__title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.legal-container__intel-property a {
+  display: inline-block;
+  font-weight: 600;
+  color: #90101f;
+}
+
+.legal-container__intel-property p {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.legal-container__cnil__title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.legal-container__cnil p {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.legal-container__cnil h3 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.legal-container__protect-data h2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.legal-container__protect-data p {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.legal-container__protect-data a {
+  display: inline-block;
+  font-weight: 600;
+  color: #90101f;
+}
+
+@media screen and (max-width: 650px) {
+  .legal-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3rem 1rem 6rem 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

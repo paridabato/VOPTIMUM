@@ -1,13 +1,14 @@
 #container-description{
     display: flex;
     justify-content: center;
-    width: 1920px;
+    padding-left: 100px;
+    width: 100%;
 }
 
 #description-big-box{
     background-color: white;
     height: 510px;
-    max-width: 900px;
+    width: 900px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -32,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 460px;
+    // width: 405px;
 }
 
 .statistique-box{
@@ -59,53 +60,45 @@
 
 // RESPONSIVE DESIGN 
 
-@media screen and(min-width: 900px) and(max-width: 1920px){
-    #container-description{
-        flex-direction: row;
-        width: 100%;
-    }
-}
-
-@media screen and(min-width: 601px) and(max-width: 900px){
+@media screen and(max-width: 1200px){
     #container-description{
         flex-direction: column;
         margin-bottom: 70px;
         align-items: center;
-        
-    }
-    #description-big-box{
-        width: 50%;
-        margin-left: 0px;
-    }
-    #description-big-box h2{
-        text-align: center;
-    }
-    #description-big-box p{
-        margin-left: 0px;
-    }
-    #description-big-box #description-title-autonoveo{
-        text-align: center;
-    }
-    #description-big-box h2{
-        margin-left: 60px;
+        padding-left: 0px;
     }
 }
-// @media screen and(max-width: 910px){
-//     #description-big-box{
-//         width: 92%;
-//         height: 700px;
-//     }
-// }
 
-// @media screen and(max-width: 1050px){
+// @media screen and(min-width: 601px) and(max-width: 900px){
 //     #container-description{
 //         flex-direction: column;
-//         width: 100%;
+//         margin-bottom: 70px;
+//         align-items: center;
+        
 //     }
 //     #description-big-box{
-//         width: 85%;
+//         width: 50%;
+//         margin-left: 0px;
+//     }
+//     #description-big-box h2{
+//         text-align: center;
+//     }
+//     #description-big-box p{
+//         margin-left: 0px;
+//     }
+//     #description-big-box #description-title-autonoveo{
+//         text-align: center;
+//     }
+//     #description-big-box h2{
+//         margin-left: 60px;
 //     }
 // }
+@media screen and(max-width: 950px){
+    #description-big-box{
+        width: 85%;
+    }
+}
+
 
 @media screen and(max-width: 600px){
     #container-description{
@@ -121,7 +114,6 @@
     #description-big-box{
         width: 85%;
         align-items: center;
-        height: 750px;
     }
     #description-big-box p{
         margin-left: 0px;

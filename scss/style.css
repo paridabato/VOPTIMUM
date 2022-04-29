@@ -2189,6 +2189,9 @@ h5 {
     height: 2200px;
     grid-auto-flow: row;
     grid-template-areas: "first-article-img" "box-in-articles-lld" "box-in-articles-lld-two-img" "content-article-text" "box-in-second-articles-lld" "content-articles-text-two" "second-article-img";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .content-articles-text-two div {
     width: 80%;
@@ -2215,6 +2218,7 @@ h5 {
     grid-area: content-article-text;
     padding-left: 50px;
     justify-content: flex-start;
+    height: 260px;
   }
   .box-in-second-articles-lld {
     grid-area: box-in-second-articles-lld;
@@ -2243,6 +2247,9 @@ h5 {
     height: 2200px;
     grid-auto-flow: row;
     grid-template-areas: "first-article-img" "box-in-articles-lld" "box-in-articles-lld-two-img" "content-article-text" "box-in-second-articles-lld" "content-articles-text-two" "second-article-img";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .content-articles-text-two div {
     width: 80%;
@@ -2269,6 +2276,7 @@ h5 {
   .content-article-text {
     grid-area: content-article-text;
     padding-left: 20px;
+    height: 260px;
   }
   .box-in-second-articles-lld {
     grid-area: box-in-second-articles-lld;

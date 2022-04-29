@@ -24,8 +24,7 @@ get_header();
                             while (have_rows('slide')) : the_row();
                                 ?>
                                 <div class="swiper-slide">
-                                    <div class="slider-bg"
-                                         style="background-image: url(<?php the_sub_field('img'); ?>);">
+                                    <div class="slider-bg" style="background-image: url(<?php the_sub_field('img'); ?>);">
                                     </div>
                                     <h2 class="slide-title">
                                         <?php the_sub_field('text', false); ?>
@@ -36,18 +35,18 @@ get_header();
                         endif;
                     endwhile;
                     ?>
-                    <div class="banner-arrows">
-                    <span class="banner-arrows-left"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                                          fill-rule="evenodd" clip-rule="evenodd">
-                            <path
-                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                        </svg></span>
-                        <span class="banner-arrows-right"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                                               fill-rule="evenodd" clip-rule="evenodd">
-                            <path
-                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                        </svg></span>
-                    </div>
+                </div>
+                <div class="banner-arrows">
+                    <span class="banner-arrows-left">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                        </svg>
+                    </span>
+                    <span class="banner-arrows-right">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                        </svg>
+                    </span>
                 </div>
             </div>
         <?php
@@ -56,28 +55,23 @@ get_header();
         if (have_rows('logo_slider')): ?>
             <div class="brands-slider">
                 <div class="brands-slider__main-container">
-                    <span class="brands-slider-arrow-left"><svg width="24" height="24"
-                                                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                                                clip-rule="evenodd">
-                            <path
-                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                        </svg></span>
+                    <span class="brands-slider-arrow-left">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                        </svg>
+                    </span>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <?php
-                            while (have_rows('logo_slider')) : the_row();
-                                ?>
+                            <?php while (have_rows('logo_slider')) : the_row(); ?>
                                 <div class="swiper-slide"><img src="<?php the_sub_field('img'); ?>" alt=""></div>
-                            <?php
-                            endwhile; ?>
+                            <?php endwhile; ?>
                         </div>
                     </div>
-                    <span class="brands-slider-arrow-right"><svg width="24" height="24"
-                                                                 xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                                                 clip-rule="evenodd">
-                            <path
-                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                        </svg></span>
+                    <span class="brands-slider-arrow-right">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                        </svg>
+                    </span>
                 </div>
             </div>
         <?php
@@ -85,15 +79,11 @@ get_header();
         ?>
     </section>
     <section class="why-autonoveo">
-        <?php
-        if (have_rows('counter')) { ?>
+        <?php if (have_rows('counter')) { ?>
             <div class="nb-boxes">
-                <?php
-                $counter = get_field('counter');
-                $books1 = array_slice($counter, 0, count($counter) / 2); ?>
+                <?php $counter = get_field('counter'); ?>
                 <div class="nb-boxes__left">
-                    <?php
-                    foreach (array_slice($counter, 0, count($counter) / 2) as $k=>$left) { ?>
+                    <?php foreach (array_slice($counter, 0, count($counter) / 2) as $k=>$left) { ?>
                         <div class="nb-boxes__left__box">
                             <div class="counter">
                                 <span class="number" data-max="<?php echo $left['number']; ?>">0</span>
@@ -104,11 +94,10 @@ get_header();
                                 <span><?php echo $left['second']; ?></span>
                             </p>
                         </div>
-                        <?php } ?>
+                    <?php } ?>
                 </div>
                 <div class="nb-boxes__right">
-                    <?php
-                    foreach (array_slice($counter, count($counter) / 2) as $k=>$right) { ?>
+                    <?php foreach (array_slice($counter, count($counter) / 2) as $k=>$right) { ?>
                         <div class="nb-boxes__right__box">
                             <div class="counter">
                                 <span class="number" data-max="<?php echo $right['number']; ?>">0</span>
@@ -119,10 +108,10 @@ get_header();
                                 <span><?php echo $right['second']; ?></span>
                             </p>
                         </div>
-                        <?php } ?>
+                    <?php } ?>
                 </div>
             </div>
-            <?php } ?>
+        <?php } ?>
         <div class="title-block">
             <p class="title-block__lld"><?php the_field('location_title'); ?></p>
             <h2 class="title-block__why"><?php the_field('location_subtitle', false, false); ?></h2>

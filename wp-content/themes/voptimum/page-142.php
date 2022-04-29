@@ -15,68 +15,106 @@
 get_header();
 ?>
 
-    <div class="main-second-title">
-        <p class="main-second-title__sub"><?php the_field('title');?></p>
-        <h1 class="main-second-title__title"><?php the_field('subtitle');?></h1>
-    </div>
-    <section class="lld-first">
-        <div class="lld-first__bg-container" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>); "></div>
-        <div class="lld-first__offer ">
-            <div class="lld-first__offer__left ">
-                <p class="sub-title "><?php the_field('under_image_title');?></p>
-                <?php the_content();?>
-            </div>
-            <div class="lld-first__offer__right">
-                <?php foreach (get_field('checklist') as $checklist){ ?>
-                    <div class="lld-first__offer__right__line">
-                        <p class="lld-first__offer__right__line__1"><?php echo $checklist['field'];?></p>
-                        <p class="lld-first__offer__right__line__2"><?php echo $checklist['regular'];?></p>
+    <section id="banner">
+        <div id="title-box">
+            <p><?php the_field('title');?></p>
+            <h1><?php the_field('under_image_title');?></h1>
+        </div>
+        <div id="banner-img" style=" background-image: url(<?php echo get_the_post_thumbnail_url();?>);
+        height: 605px;
+        background-size: cover;">
+        </div>
+    </section>
+    <section id="container-description">
+        <div id="description-big-box">
+            <p id="description-title-autonoveo"><?php the_field('under_image_title');?></p>
+            <?php the_content();?>
+        </div>
+        <?php if (have_rows('side_counter')) { ?>
+        <div id="description-stats-box">
+            <?php $side_counter = get_field('side_counter'); ?>
+            <div>
+                <?php foreach (array_slice($side_counter, 0, count($side_counter) / 2) as $k=>$left) { ?>
+                    <div class="statistique-box">
+                        <p class="chiffres"><?php echo $left['number']; ?></p>
+                        <p><?php echo $left['regular']; ?> | <span><?php echo $left['bold']; ?></span></p>
                     </div>
                 <?php } ?>
             </div>
-    </section>
-    <section class="works works-bg-grey">
-        <div class="title-block">
-            <p class="title-block__sub-title"><?php the_field('sur-mesure_title');?></p>
-            <h2 class="title-block__title"><?php the_field('sur-mesure_subtitle', false, false);?></h2>
-        </div>
-        <div class="cards">
-            <?php foreach (get_field('benefits') as $benefits){ ?>
-                <div class="cards__card">
-                    <p class="cards__card__desc"><?php echo $benefits['benefit'];?></p>
-                </div>
-            <?php } ?>
-        </div>
-    </section>
-    <section class="optimisation">
-        <div class="optimisation__container">
-            <div class="optimisation__container__speedometer" style="background-image: url(<?php the_field('optimisons_image_left');?>);"></div>
-            <div class="optimisation__container__title-core">
-                <h2 class="optimisation__container__title-core__h"><?php the_field('optimisons_title');?></h2>
-                <?php $optimisons_link = get_field('optimisons_link');?>
-                <a href="<?php echo $optimisons_link['url'];?>" target="<?php echo $optimisons_link['target'];?>" class="optimisation__container__title-core__contact-us"><?php echo $optimisons_link['title'];?></a>
-            </div>
-            <div class="optimisation__container__good-choice">
-                <?php the_field('optimisons_text');?>
-            </div>
-            <div class="optimisation__container__3-lines" style="background-image: url(<?php the_field('optimisons_image_right');?>);">
-                <?php foreach (get_field('optimisons_right_text') as $optimisons_right_text){ ?>
-                    <p class="optimisation__container__3-lines__line"><?php echo $optimisons_right_text['text'];?></p>
+            <div>
+                <?php foreach (array_slice($side_counter, count($side_counter) / 2) as $k=>$right) { ?>
+                    <div class="statistique-box">
+                        <p class="chiffres"><?php echo $right['number']; ?>+</p>
+                        <p><?php echo $right['regular']; ?> | <span><?php echo $right['bold']; ?></span></p>
+                    </div>
                 <?php } ?>
             </div>
-            <div class="optimisation__container__needs-priority">
-                <h2 class="optimisation__container__needs-priority__h"><?php the_field('slogan_title');?></h2>
-                <p class="optimisation__container__needs-priority__desc"><?php the_field('slogan_text');?></p>
-            </div>
-            <div class="optimisation__container__guy" style="background-image: url(<?php the_field('slogan_image');?>);"></div>
         </div>
+        <?php } ?>
     </section>
-
-<style>
-    .lld-first__offer__right__line:before{
-        background-image: url(<?php echo wp_upload_dir()['baseurl'];?>/2022/04/noun-check-box-858499.png);
-    }
-</style>
+    <div class="container">
+        <div class="first-article-img" style="background-image: url(<?php the_field('longue_image_left');?>);
+            background-size: cover;"></div>
+        <div class="box-in-articles-lld">
+            <div>
+                <h2><?php the_field('long_title');?></h2>
+            </div>
+            <div>
+                <?php $longue_link = get_field('longue_link');?>
+                <p><a href="<?php echo $longue_link['url'];?>" class="link-in-first-articles"><?php echo $longue_link['title'];?></a></p>
+            </div>
+        </div>
+        <div class="box-in-articles-lld-two-img" style="background-image: url(<?php the_field('longue_image_center');?>);background-size: cover;"></div>
+        <div class="content-article-text">
+            <div><?php the_field('long_content');?></div>
+        </div>
+        <div class="box-in-second-articles-lld">
+            <div>
+                <h2><?php the_field('used_title');?></h2>
+            </div>
+            <div>
+                <?php $used_link = get_field('used_link');?>
+                <p><a href="<?php echo $used_link['url'];?>" class="link-in-first-articles"><?php echo $used_link['title'];?></a></p>
+            </div>
+        </div>
+        <div class="content-articles-text-two">
+            <div>
+                <p><?php the_field('used_content');?></p>
+            </div>
+        </div>
+        <div class="second-article-img" style="background-image: url(<?php the_field('used_image');?>);
+            background-size: cover; background-position: center;"></div>
+    </div>
+    <div class="third-article">
+        <div class="third-article-box-contact" style="background-image: url(<?php the_field('address_image');?>);
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: flex-end;
+            background-size: cover;
+            align-items: center;">
+            <div class="third-article-box-contact-content">
+                <div class="third-article-box-contact-text-content">
+                    <p><?php the_field('address_title');?></p>
+                    <p id="third-article-box-contact-text-content-p"><?php the_field('address_contact');?></p>
+                    <?php $address_link = get_field('address_link');?>
+                    <p><a href="<?php echo $address_link['url'];?>"><?php echo $address_link['title'];?></a><p>
+                </div>
+            </div>
+        </div>
+        <div class="third-article-box-right-title-content">
+            <p><?php the_field('pourquoi_title');?></p>
+            <h2><?php the_field('pourquoi_subtitle', false, false);?></h2>
+        </div>
+       <?php $class = ['', '-two', '-three', '-four'];
+            $pourquoi_reason = get_field('pourquoi_reason');
+            foreach ($pourquoi_reason as $k=>$reason) { ?>
+                <div class="four-step-chose-autonoveo<?php echo $class[$k];?>">
+                    <p class="four-step-chose-autonoveo-number">0<?php echo $k+1;?>.</p>
+                    <p><span><?php echo $reason['bold'];?></span></p>
+                    <p><?php echo $reason['text'];?></p>
+                </div>
+            <?php } ?>
+    </div>
 
 <?php
 get_sidebar();

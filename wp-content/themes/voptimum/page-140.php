@@ -16,97 +16,77 @@ get_header();
 ?>
 
     <div class="main-second-title">
-        <p class="main-second-title__sub">location longue durée</p>
-        <h1 class="main-second-title__title">LLD entreprises</h1>
+        <p class="main-second-title__sub"><?php the_field('title');?></p>
+        <h1 class="main-second-title__title"><?php the_field('subtitle');?></h1>
     </div>
-    <section class="lld-first">
-        <div class="lld-first__bg-container" style="background-image: url( './assets/img/obi-pixel6propix-aZKJEvydrNM-unsplash.jpg'); "></div>
-        <div class="lld-first__offer ">
-            <div class="lld-first__offer__left ">
-                <p class="sub-title ">pour les entreprises</p>
-                <h2 class="title ">Les offres sur-mesure de location longue durée</h2>
-                <div class="descs">
-                    <p class="descs__desc ">VLa Location Longue Durée (ou LLD) d'<span>auto</span>noveo s'adresse à toues entreprises souhaitant <span>remplacer leur véhicule professionnels ou renouveler leur
-                                flotte automobile</span> pour répondre à leurs besoins spécifiques.</p>
-                    <p class="descs__desc">Une offre sur-mesure dédiées aux entreprises n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without </p>
-                    <a href="# " class="descs__about-us">En savoir plus sur auto noveo</a>
+    <section class="second-hands">
+        <div class="second-hands__bg-container" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>); "></div>
+        <div class="second-hands__offer ">
+            <div class="second-hands__offer__left ">
+                <p class="sub-title "><?php the_field('under_image_title');?></p>
+                <?php the_content();?>
+                <div class="counter__box ">
+                    <?php $counter = get_field('counter');?>
+                    <div class="counter ">
+                        <span><?php echo $counter['number'];?>+</span>
+                    </div>
+                    <p class="counter-text ">
+                        <span><?php echo $counter['bold'];?></span>
+                        <span><?php echo $counter['regular'];?></span>
+                    </p>
                 </div>
             </div>
-            <div class="lld-first__offer__right">
-                <div class="lld-first__offer__right__line">
-                    <p class="lld-first__offer__right__line__1">une offre de lld sur-mesure</p>
-                    <p class="lld-first__offer__right__line__2">Et dédiée aux entreprises</p>
-                </div>
-                <div class="lld-first__offer__right__line">
-                    <p class="lld-first__offer__right__line__1">une solution de financement</p>
-                    <p class="lld-first__offer__right__line__2">Pour un budget maîtrisé</p>
-                </div>
-                <div class="lld-first__offer__right__line">
-                    <p class="lld-first__offer__right__line__1">un outil de gestion</p>
-                    <p class="lld-first__offer__right__line__2">Pour votre parc automobile</p>
-                </div>
-                <div class="lld-first__offer__right__line">
-                    <p class="lld-first__offer__right__line__1">le renouvellement</p>
-                    <p class="lld-first__offer__right__line__2">de vos véhicules de société</p>
-                </div>
-            </div>
-    </section>
-    <section class="works works-bg-grey">
-        <div class="title-block">
-            <p class="title-block__sub-title">la location sur-mesure</p>
-            <h2 class="title-block__title">Comment fonctionne <span>la LLD pour les entreprises</span> ?</h2>
-        </div>
-        <div class="cards">
-            <div class="cards__card">
-
-                <p class="cards__card__desc">Etude personnalisée de vos besoins pour votre véhicule ou votre flotte lorem ipsum</p>
-            </div>
-            <div class="cards__card">
-
-                <p class="cards__card__desc">Etude personnalisée de vos besoins pour votre véhicule ou votre flotte lorem ipsum</p>
-            </div>
-            <div class="cards__card">
-
-                <p class="cards__card__desc">Etude personnalisée de vos besoins pour votre véhicule ou votre flotte lorem ipsum</p>
-            </div>
-            <div class="cards__card">
-
-                <p class="cards__card__desc">Etude personnalisée de vos besoins pour votre véhicule ou votre flotte lorem ipsum</p>
-            </div>
+            <div class="second-hands__offer__right" style="background-image: url(<?php the_field('counter_image');?>);"></div>
         </div>
     </section>
-    <section class="optimisation">
-        <div class="optimisation__container">
-            <div class="optimisation__container__speedometer" style="background-image: url('./assets/img/chuttersnap-hmWcrTxvAk0-unsplash.jpg');"></div>
-            <div class="optimisation__container__title-core">
-                <h2 class="optimisation__container__title-core__h">Optimisons ensemble, la gestion de vos véhicules
-                </h2>
-                <a href="#" class="optimisation__container__title-core__contact-us">Découvrir autonoveo</a>
-            </div>
-            <div class="optimisation__container__good-choice">
-                <div class="optimisation__container__good-choice__top">
-                    <h4 class="optimisation__container__good-choice__top__title">LLD pour Entreprises</h4>
-                    <p class="optimisation__container__good-choice__top_desc">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte défi</p>
-                </div>
-                <div class="optimisation__container__good-choice__bot">
-                    <h4 class="optimisation__container__good-choice__bot__title">Faire le bon choix automobile</h4>
-                    <p class="optimisation__container__good-choice__bot_desc">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte défi</p>
+    <div class="brands-slider">
+        <div class="brands-slider__main-container">
+            <span class="brands-slider-arrow-left">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                </svg>
+            </span>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <?php foreach(get_field('logo_slider', get_option('page_on_front')) as $logo_slider):?>
+                        <div class="swiper-slide"><img src="<?php echo $logo_slider['img']; ?>" alt=""></div>
+                    <?endforeach; ?>
                 </div>
             </div>
-            <div class="optimisation__container__3-lines" style="background-image: url('./assets/img/jose-carbajal-8xyki0bqvgw-unsplash.jpg');">
-                <p class="optimisation__container__3-lines__line">professions libérales</p>
-                <p class="optimisation__container__3-lines__line">tpe, pme & artisans</p>
-                <p class="optimisation__container__3-lines__line">professionnels de l'automobile</p>
-            </div>
-            <div class="optimisation__container__needs-priority">
-                <h2 class="optimisation__container__needs-priority__h">Vos besoins en LLD, notre priorité.
-                </h2>
-                <p class="optimisation__container__needs-priority__desc">Financement de vos véhicules de société ou gestion de votre flotte professionnelle, notre équipe vous aide à faire le bon choix automobile !</p>
-            </div>
-            <div class="optimisation__container__guy" style="background-image: url('./assets/img/bruce-mars-8YG31Xn4dSw-unsplash.jpg');"></div>
+            <span class="brands-slider-arrow-right">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <?php if (have_rows('grid')) { ?>
+    <section class="second-hands-grid">
+        <div class="second-hands-grid__container">
+            <?php $class = ['desc', 'low-km', 'checked', 'discount', 'profits-1', 'profits-2'];
+            $k = 0;
+            while (have_rows('grid')) : the_row();
+                $style = (get_sub_field('image'))?'style="background-image: url('.get_sub_field('image').');"':'';
+                ?>
+                <div class="second-hands-grid__container__<?php echo $class[$k];?>" <?php echo $style;?>>
+                    <?php if(get_sub_field('hover_title')) { ?>
+                        <h2 class="second-hands-grid__container__desc__title"><?php the_sub_field('hover_title');?></h2>
+                    <?php } ?>
+                    <?php if(get_sub_field('content')) { ?>
+                        <p class="second-hands-grid__container__desc__text"><?php the_sub_field('content', false);?></p>
+                    <?php } ?>
+                    <?php if(get_sub_field('phone')) { ?>
+                        <span class="second-hands-grid__container__desc__tel"><?php echo the_sub_field('phone');?></span>
+                    <?php } ?>
+                    <?php if(get_sub_field('title_bold') && get_sub_field('title_regular')) { ?>
+                        <p class="strong-light"><span><?php the_sub_field('title_bold');?></span><span><?php the_sub_field('title_regular');?></span></p>
+                    <?php } ?>
+                </div>
+
+            <?php $k++; endwhile; ?>
         </div>
     </section>
-
+    <?php } ?>
 <?php
 get_sidebar();
 get_footer();

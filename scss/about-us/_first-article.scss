@@ -81,7 +81,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
-        height: 1600px;
+        height: 2200px;
         grid-auto-flow: row;
         grid-template-areas:
           "first-article-img"
@@ -102,11 +102,11 @@
       }
 
 
-      .first-article-img { grid-area: first-article-img; background-attachment: fixed; background-position: center;}
+      .first-article-img { grid-area: first-article-img; background-attachment: fixed; background-position: center; height: 400px;}
       
       .box-in-articles-lld { grid-area: box-in-articles-lld; }
       
-      .box-in-articles-lld-two-img { grid-area: box-in-articles-lld-two-img; background-attachment: fixed; background-position: center; }
+      .box-in-articles-lld-two-img { grid-area: box-in-articles-lld-two-img; background-attachment: fixed; background-position: center; height: 400px; }
       
       .content-article-text { grid-area: content-article-text; }
       
@@ -114,7 +114,7 @@
       
       .content-articles-text-two { grid-area: content-articles-text-two; display: flex; justify-content: center; }
       
-      .second-article-img { grid-area: second-article-img; background-attachment: fixed; background-position: center; }
+      .second-article-img { grid-area: second-article-img; background-attachment: fixed; background-position: center; height: 400px; }
       
   }
 
@@ -124,7 +124,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
-        height: 1600px;
+        height: 2200px;
         grid-auto-flow: row;
         grid-template-areas:
           "first-article-img"

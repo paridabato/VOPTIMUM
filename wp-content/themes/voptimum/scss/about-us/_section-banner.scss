@@ -1,0 +1,42 @@
+// ##########################  
+// Banner
+// ##########################
+
+// #banner{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+#title-box{
+    width: 100%;
+}
+#banner div{
+    text-align: center;
+}
+#banner #banner-img{
+    margin-top: 70px;
+}
+
+#title-box p{
+    font-size: 15px;
+}
+#title-box h1{
+    font-size: 60px;
+}
+// #banner{
+//     background-image: url("../assets/autonoveo-societe_1920x605.jpg");
+//     height: 605px;
+//     max-width: 1920px;;
+//     background-size: cover;
+// }
+
+@media screen and(max-width: 600px){
+    #banner-img{
+        max-width: 100%;
+    }
+    #title-box{
+        width: 100%;
+    }
+}

@@ -40,19 +40,12 @@
       padding-left: 20px;
 }
 
-.box-in-articles-lld p {
+.link-in-first-articles{
     font-weight: bold;
-    display: inline;
     border-bottom: 2px solid black;
-    padding-bottom: 8px;
+    display: inline;
 }
 
-.box-in-second-articles-lld p {
-    font-weight: bold;
-    display: inline;
-    border-bottom: 2px solid black;
-    padding-bottom: 8px;
-}
 
 .content-articles-text-two{
     display: flex;
@@ -91,6 +84,9 @@
           "box-in-second-articles-lld"
           "content-articles-text-two"
           "second-article-img";
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
       }
       
 
@@ -108,11 +104,11 @@
       
       .box-in-articles-lld-two-img { grid-area: box-in-articles-lld-two-img; background-attachment: fixed; background-position: center; height: 400px; }
       
-      .content-article-text { grid-area: content-article-text; }
+      .content-article-text { grid-area: content-article-text; padding-left: 50px; justify-content: flex-start; height: 260px;}
       
       .box-in-second-articles-lld { grid-area: box-in-second-articles-lld; padding-left: 50px; }
       
-      .content-articles-text-two { grid-area: content-articles-text-two; display: flex; justify-content: center; }
+      .content-articles-text-two { grid-area: content-articles-text-two; display: flex; justify-content: flex-start; padding-left: 50px; }
       
       .second-article-img { grid-area: second-article-img; background-attachment: fixed; background-position: center; height: 400px; }
       
@@ -134,6 +130,9 @@
           "box-in-second-articles-lld"
           "content-articles-text-two"
           "second-article-img";
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
       }
       
 
@@ -155,7 +154,7 @@
       
       .box-in-articles-lld-two-img { grid-area: box-in-articles-lld-two-img; background-position: none; background-attachment: initial; }
       
-      .content-article-text { grid-area: content-article-text; }
+      .content-article-text { grid-area: content-article-text; padding-left: 20px; height: 260px;}
       
       .box-in-second-articles-lld { grid-area: box-in-second-articles-lld; padding-left: 20px; }
       

@@ -1,0 +1,50 @@
+// ########################################################################
+//                     CORE PARTIALS
+// ########################################################################
+@import 'core/_reset';
+@import 'core/_base';
+@import 'core/_variables';
+@import 'core/_mixins';
+@import 'core/_placeholders';
+@import 'core/_header';
+@import 'core/_brand-slider';
+@import 'core/_swiper';
+@import 'core/_main-page-title';
+@import 'core/_how-it-works';
+@import 'core/_footer';
+// ########################################################################
+//                     HOME PAGE PARTIALS
+// ########################################################################
+@import 'home_page/_banner';
+@import 'home_page/_banner-slider';
+@import 'home_page/_why-autonoveo';
+@import 'home_page/_lld-grid';
+@import 'home_page/_contact-offer';
+@import 'home_page/_showroom';
+// ########################################################################
+//                     SECOND HANDS PAGE PARTIALS
+// ########################################################################
+@import 'second_hands/_second-hands';
+@import 'second_hands/_second-hands-grid';
+// ########################################################################
+//                     LLD PAGE PARTIALS
+// ########################################################################
+@import 'lld/_lld-first-section';
+@import 'lld/_lld-how-works';
+@import 'lld/_optimisation-grid';
+//##########################################################################
+//                      ABOUT US PAGE
+// #########################################################################
+@import 'about-us/_section-banner.scss';
+@import 'about-us/_container-description.scss';
+@import 'about-us/_first-article.scss';
+@import 'about-us/_third-article.scss';
+//##########################################################################
+//                      CONTACT PAGE
+// #########################################################################
+@import 'contact/_contact.scss';
+@import 'contact/_form.scss';
+//##########################################################################
+//                      STANDARD PAGE
+// #########################################################################
+@import 'standard/_standard.scss';

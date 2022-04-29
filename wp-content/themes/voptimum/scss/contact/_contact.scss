@@ -1,0 +1,144 @@
+.contact {
+    width: 100%;
+    height: fit-content;
+    &__bg-container {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        width: 100%;
+        height: fit-content;
+        margin-top: -5rem;
+        margin-bottom: 3rem;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            width: 45%;
+            padding: 3rem 3rem 2rem 3rem;
+            &__sub-title {
+                text-transform: uppercase;
+            }
+            &__title {
+                width: fit-content !important;
+            }
+            &__cordonates {
+                margin: 3rem 0 2rem 0;
+                &__p {
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                &__adress {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-weight: 600;
+                    }
+                     :last-child {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &__right {
+            width: fit-content;
+            height: fit-content;
+            align-self: flex-start;
+            padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+            &__phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    color: $medium-grey;
+                    font-size: clamp(35px, 3vw, 60px);
+                    font-weight: 600;
+                    line-height: inherit;
+                }
+            }
+            &__mail {
+                text-align: center;
+                font-size: 18px;
+                span {
+                    font-weight: 800;
+                    padding-right: .7rem;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .contact {
+        &__bg-container {
+            height: 400px;
+        }
+        &__container {
+            &__left {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact {
+        &__bg-container {
+            height: 400px;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column !important;
+            width: 90% !important;
+            height: fit-content;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            &__left {
+                width: 100%;
+                &__cordonates {
+                    margin: 3rem 0 7rem 0;
+                }
+            }
+            &__right {
+                width: fit-content;
+                height: fit-content;
+                margin-bottom: 2rem;
+                padding-top: 0;
+                position: absolute;
+                top: 19rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact {
+        &__container {
+            &__left {
+                padding: 1rem 0 1rem 0;
+                &__sub-title {
+                    text-align: center;
+                }
+                &__title {
+                    align-self: center;
+                }
+            }
+            &__right {
+                margin-left: 0;
+                top: 17rem
+            }
+        }
+    }
+}

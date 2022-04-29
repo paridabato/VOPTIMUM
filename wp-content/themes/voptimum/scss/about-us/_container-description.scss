@@ -1,0 +1,140 @@
+#container-description{
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+}
+
+#description-big-box{
+    background-color: white;
+    height: 510px;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: -120px;
+}
+
+#description-big-box p{
+    margin-left: 25px;
+}
+ #description-big-box h2{
+    margin-left: 25px;
+    font-size: 60px;
+    width: 80%;
+} 
+#description-title-autnoveo{
+    margin-top: 25px;
+}
+
+#description-stats-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+}
+
+.statistique-box{
+    width: 230px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statistique-box p{
+    margin: 0px;
+}
+
+.statistique-box span{
+    font-weight: bold;
+}
+.chiffres{
+    font-size: 50px;
+    color: #DFE4EA;
+    font-weight: bold;
+}
+
+// RESPONSIVE DESIGN 
+
+@media screen and(min-width: 900px) and(max-width: 1920px){
+    #container-description{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media screen and(min-width: 601px) and(max-width: 900px){
+    #container-description{
+        flex-direction: column;
+        margin-bottom: 70px;
+        align-items: center;
+        
+    }
+    #description-big-box{
+        width: 50%;
+        margin-left: 0px;
+    }
+    #description-big-box h2{
+        text-align: center;
+    }
+    #description-big-box p{
+        margin-left: 0px;
+    }
+    #description-big-box #description-title-autonoveo{
+        text-align: center;
+    }
+    #description-big-box h2{
+        margin-left: 60px;
+    }
+}
+// @media screen and(max-width: 910px){
+//     #description-big-box{
+//         width: 92%;
+//         height: 700px;
+//     }
+// }
+
+// @media screen and(max-width: 1050px){
+//     #container-description{
+//         flex-direction: column;
+//         width: 100%;
+//     }
+//     #description-big-box{
+//         width: 85%;
+//     }
+// }
+
+@media screen and(max-width: 600px){
+    #container-description{
+        flex-direction: column;
+        margin-top:72px;
+        width: 100%;
+        align-items: center;
+    }
+    #description-big-box h2{
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    #description-big-box{
+        width: 85%;
+        align-items: center;
+        height: 750px;
+    }
+    #description-big-box p{
+        margin-left: 0px;
+    }
+    #description-stats-box{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    #description-big-box-text{
+        font-size: 14px;
+    }
+    .statistique-box{
+        width: 195px;
+        text-align: center;
+    }
+}

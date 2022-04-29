@@ -1,0 +1,230 @@
+#footer {
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    background-color: $black;
+    flex-wrap: wrap;
+    .footer-top {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .6rem;
+        margin-bottom: 1.5rem;
+        &__left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            min-width: 490px;
+            height: 3.2rem;
+            color: $white;
+            &__logo-autonoveo {
+                height: 100%;
+                width: 37%;
+                min-width: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                position: relative;
+                span {
+                    width: 60%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                }
+                &__under-logo {
+                    text-transform: uppercase;
+                    font-size: $footer-font-size;
+                }
+                &::after {
+                    content: '';
+                    height: 100%;
+                    width: 2px;
+                    background-color: $white;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            &__adress {
+                text-transform: uppercase;
+                &__line-1 {
+                    font-size: $footer-font-size;
+                }
+                &__line-2 {
+                    font-size: $footer-font-size;
+                }
+            }
+            &__contact-us {
+                &__link {
+                    font-size: $footer-font-size;
+                    text-transform: uppercase;
+                    font-family: 'palanquin';
+                }
+                &__phone {
+                    font-size: $footer-font-size;
+                }
+            }
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 40%;
+            min-width: 550px;
+            height: 3.2rem;
+            color: $white;
+            &__logo-voptimum {
+                height: 100%;
+                width: 30%;
+                min-width: 180px;
+                position: relative;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left center;
+                &::after {
+                    content: '';
+                    height: 100%;
+                    width: 2px;
+                    background-color: $white;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            &__logo-autonoveo {
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                max-width: 20%;
+                min-width: 6rem;
+                height: 50%;
+            }
+            &__logo-avis {
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                max-width: 20%;
+                min-width: 6rem;
+                height: 50%;
+            }
+            &__logo-speedy {
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                max-width: 20%;
+                min-width: 6rem;
+                height: 50%;
+            }
+        }
+    }
+    .footer-bottom {
+        margin: auto;
+        height: fit-content;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $medium-grey;
+        position: relative;
+        flex-wrap: wrap;
+        &__logo-autonoveo {
+            width: 150px;
+            position: relative;
+            font-size: $footer-font-size;
+            text-align: center;
+            span {
+                font-weight: 600;
+            }
+            &::after {
+                content: '';
+                width: 2px;
+                height: 1rem;
+                background-color: $medium-grey;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY((-50%));
+            }
+        }
+        &__ment-leg {
+            width: 150px;
+            text-align: end;
+            position: relative;
+            font-family: 'Palanquin';
+            text-transform: capitalize;
+            text-align: center;
+            font-size: $footer-font-size;
+            &::after {
+                content: '';
+                width: 2px;
+                height: 1rem;
+                background-color: $medium-grey;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY((-50%));
+            }
+        }
+        &__pol-conf {
+            width: 200px;
+            position: relative;
+            font-family: 'Palanquin';
+            text-transform: capitalize;
+            text-align: center;
+            font-size: $footer-font-size;
+            &::after {
+                content: '';
+                width: 2px;
+                height: 1rem;
+                background-color: $medium-grey;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY((-50%));
+            }
+        }
+        &__eanet {
+            width: 130px;
+            text-align: center;
+            font-size: $footer-font-size;
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1177px) {
+    #footer {
+        .footer-top {
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #footer {
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        .footer-bottom {
+            justify-content: center;
+            &__ment-leg::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    #footer {
+        .footer-top {
+            display: none;
+        }
+    }
+}

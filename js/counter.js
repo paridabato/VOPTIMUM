@@ -1,9 +1,9 @@
-var numbers = document.querySelector('.number')
-var numberTop = numbers.getBoundingClientRect().top
-var start = +number.innerHTML
-var end = +number.dataset.max
+let numbers = document.querySelectorAll('.number');
 
 numbers.forEach((number) => {
+    let numberTop = number.getBoundingClientRect().top,
+        start = +number.innerHTML,
+        end = +number.dataset.max;
     window.addEventListener('scroll', function onScroll() {
         if (window.pageYOffset > numberTop - window.innerHeight / 2) {
             this.removeEventListener('scroll', onScroll);

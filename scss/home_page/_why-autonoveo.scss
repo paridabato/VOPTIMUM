@@ -3,15 +3,16 @@
     height: fit-content;
     margin-top: 2rem;
     .nb-boxes {
-        width: 60%;
+        width: fit-content;
         margin: auto;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 5rem;
         &__left {
             display: flex;
             gap: 5rem;
             margin: 1rem 0 1rem 0;
+            justify-content: space-around;
             &__box {
                 display: flex;
                 flex-direction: column;
@@ -54,6 +55,7 @@
             display: flex;
             gap: 5rem;
             margin: 1rem 0 1rem 0;
+            justify-content: space-around;
             &__box {
                 display: flex;
                 flex-direction: column;
@@ -132,6 +134,13 @@
                 text-align: justify;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nb-boxes {
+        flex-direction: column;
+        gap: 0 !important;
     }
 }
 

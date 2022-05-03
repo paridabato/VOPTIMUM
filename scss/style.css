@@ -1080,15 +1080,17 @@ h5 {
 }
 
 .why-autonoveo .nb-boxes {
-  width: 60%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
 }
 
 .why-autonoveo .nb-boxes__left {
@@ -1097,6 +1099,8 @@ h5 {
   display: flex;
   gap: 5rem;
   margin: 1rem 0 1rem 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .why-autonoveo .nb-boxes__left__box {
@@ -1163,6 +1167,8 @@ h5 {
   display: flex;
   gap: 5rem;
   margin: 1rem 0 1rem 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .why-autonoveo .nb-boxes__right__box {
@@ -1276,6 +1282,16 @@ h5 {
 
 .why-autonoveo .why-cards__why-card__desc {
   text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+  .nb-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0 !important;
+  }
 }
 
 @media screen and (max-width: 650px) {
